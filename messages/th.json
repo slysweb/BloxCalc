@@ -1,0 +1,21 @@
+{
+  "HomePage": {
+    "title": "หน้าแรก",
+    "aboutLink": "เกี่ยวกับ",
+    "gamesHeading": "เกม"
+  },
+  "AboutPage": {
+    "title": "เกี่ยวกับ",
+    "homeLink": "หน้าแรก"
+  },
+  "Breadcrumbs": {
+    "home": "หน้าแรก",
+    "calculator": "เครื่องคิดเลข",
+    "openCalculator": "เปิดเครื่องคิดเลข"
+  },
+  "GameCalculator": {
+    "metaTitleSuffix": "เครื่องคิดเลข",
+    "heading": "เครื่องคิดเลข {game}",
+    "placeholder": "ส่วนติดต่อเครื่องคิดเลขจะอยู่ที่นี่"
+  }
+}

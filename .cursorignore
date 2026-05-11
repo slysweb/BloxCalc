@@ -1,0 +1,4 @@
+﻿# Large / generated dirs (Cursor indexing only; Git 仍用 .gitignore)
+node_modules/
+.next/
+out/

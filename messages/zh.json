@@ -1,0 +1,21 @@
+{
+  "HomePage": {
+    "title": "首页",
+    "aboutLink": "关于",
+    "gamesHeading": "游戏"
+  },
+  "AboutPage": {
+    "title": "关于",
+    "homeLink": "首页"
+  },
+  "Breadcrumbs": {
+    "home": "首页",
+    "calculator": "计算器",
+    "openCalculator": "打开计算器"
+  },
+  "GameCalculator": {
+    "metaTitleSuffix": "计算器",
+    "heading": "{game} 计算器",
+    "placeholder": "计算器界面将放在这里。"
+  }
+}

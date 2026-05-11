@@ -1,0 +1,21 @@
+{
+  "HomePage": {
+    "title": "ホーム",
+    "aboutLink": "概要",
+    "gamesHeading": "ゲーム"
+  },
+  "AboutPage": {
+    "title": "概要",
+    "homeLink": "ホーム"
+  },
+  "Breadcrumbs": {
+    "home": "ホーム",
+    "calculator": "計算ツール",
+    "openCalculator": "計算ツールを開く"
+  },
+  "GameCalculator": {
+    "metaTitleSuffix": "計算ツール",
+    "heading": "{game} の計算ツール",
+    "placeholder": "計算ツールの UI はここに配置します。"
+  }
+}

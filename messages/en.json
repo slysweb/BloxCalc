@@ -1,0 +1,21 @@
+{
+  "HomePage": {
+    "title": "Home",
+    "aboutLink": "About",
+    "gamesHeading": "Games"
+  },
+  "AboutPage": {
+    "title": "About",
+    "homeLink": "Home"
+  },
+  "Breadcrumbs": {
+    "home": "Home",
+    "calculator": "Calculator",
+    "openCalculator": "Open calculator"
+  },
+  "GameCalculator": {
+    "metaTitleSuffix": "Calculator",
+    "heading": "{game} calculator",
+    "placeholder": "Calculator UI goes here."
+  }
+}
