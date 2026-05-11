@@ -7,7 +7,8 @@
 - Next.js 15、React 19、TypeScript  
 - [next-intl](https://next-intl.dev/)，路由前缀：`/en`、`/ja`、`/zh`、`/pt`、`/th`  
 - 游戏数据：`data/games/*.json` + `manifest.json`  
-- 构建产物目录：`out/`（Cloudflare Pages 的「构建输出目录」应填 `out`）
+- 构建产物目录：`out/`  
+- Cloudflare：仓库根 **`wrangler.jsonc`** 中的 **`pages_build_output_dir`** 指向 `./out`（新版控制台若**没有**单独的「Build output directory」字段，可用此文件声明静态输出目录；详见下文）
 
 ## 本地开发
 
@@ -46,30 +47,54 @@ npx serve out
 
 ## 发布到 Cloudflare Pages
 
-### 通过 Dashboard 连接 GitHub
+仓库里已包含 **`wrangler.jsonc`**：`pages_build_output_dir` 为 **`./out`**，与 Next 静态导出一致。请把其中的 **`name`** 改成你在 Cloudflare 上创建的 **Pages 项目名称**（与 Dashboard 里显示的一致）。
 
-1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**。  
-2. 选择仓库与分支。  
-3. **构建设置**：  
-   - **Framework preset**：`None`（或按需选择；本项目是纯静态导出，不依赖 Pages 的 Next.js SSR 预设）。  
-   - **Build command**：`npm run build`  
-   - **Build output directory**：`out`  
-4. 若仓库根目录**不是**本项目（例如 monorepo），在 Pages 项目设置里将 **Root directory** 设为 **`BloxCalc`**（或你的子目录名）。  
-5. **Environment variables**：按需添加 `NEXT_PUBLIC_SITE_URL`（生产域名）。  
-6. **Node 版本**：建议使用 **20.x** 或 **22.x**（与本地一致可减少差异）。可在 Pages → Settings → Environment variables 中设置 `NODE_VERSION=20`，或在仓库根放置 `.nvmrc` / `package.json` 的 `engines` 字段（视 Pages 解析策略而定）。
+### 界面 A：有「Build output directory」、Deploy command 可留空
 
-首次部署完成后，每次推送到设定分支会自动构建与发布。
+1. **Framework preset**：`None`（勿选会走 SSR / OpenNext 的 Next 预设）。  
+2. **Build command**：`npm run build`  
+3. **Build output directory**：`out`  
+4. **Deploy command**：留空即可（由 Pages 直接发布 `out`）。  
 
-### 使用 Wrangler CLI（可选）
+### 界面 B：没有「Build output directory」、且 Deploy command 必填（你当前情况）
 
-已安装 [Wrangler](https://developers.cloudflare.com/workers/wrangler/) 时，可在构建后执行：
+这是 **「先构建，再用 Wrangler 发布 Pages」** 的流程：静态输出目录由 **`wrangler.jsonc`** 的 **`pages_build_output_dir`** 标明；控制台里不再单独出现一项「输出目录」也属正常。
+
+请按下面填写（**Path** 一般为仓库根 `/`；若 Pages 的「根目录」指向子文件夹，则 Path 填该子路径，例如 `/BloxCalc`）：
+
+| 字段 | 建议值 |
+|------|--------|
+| **Build command** | `npm run build` |
+| **Deploy command** | `npm run pages:deploy`（等价于 `npx wrangler pages deploy out`） |
+| **Path** | 执行上述命令的目录，单体仓库多为 `/` |
+
+**不要**填 `npx wrangler deploy`：那是 **Workers** 部署，会误触 OpenNext，并在静态导出项目上出现 `pages-manifest.json` 缺失等错误。
+
+Git 集成构建环境下，Cloudflare 一般会为 Wrangler 注入凭据；若本地执行 `npm run pages:deploy`，需先按 [Wrangler 登录](https://developers.cloudflare.com/workers/wrangler/install-and-update/) 完成鉴权。
+
+### 通用说明
+
+1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**，选择仓库与分支。  
+2. **Framework preset**：`None`。  
+3. **Environment variables**：按需设置 `NEXT_PUBLIC_SITE_URL`；Node 版本可用 `NODE_VERSION=22` 等。  
+4. monorepo 时，在 Pages 设置里配置 **Root directory**（例如 `BloxCalc`），并与 **Path** 一致。
+
+### 本地仅用命令行发布（可选）
 
 ```bash
 npm run build
-npx wrangler pages deploy out --project-name=<你的项目名称>
+npm run pages:deploy
 ```
 
-具体参数以当前 Wrangler 文档为准。
+若项目名称与 `wrangler.jsonc` 的 `name` 不一致，可使用：
+
+`npx wrangler pages deploy out --project-name=<你的 Pages 项目名称>`
+
+详见 [wrangler pages deploy](https://developers.cloudflare.com/workers/wrangler/commands/pages/#deploy)。
+
+### 关于 `wrangler.jsonc` 与 Dashboard
+
+在部分配置方式下，带 **`pages_build_output_dir`** 的 Wrangler 文件会成为 **配置来源**之一；修改 `name`、输出目录等后，请与 Cloudflare 项目设置保持一致。若你更希望完全在网页里配置、不使用仓库内的 Wrangler 文件，可自行删除 `wrangler.jsonc` 并改用控制台提供的字段（以你账号下当前产品界面为准）。
 
 ## 项目结构（摘要）
 
@@ -78,6 +103,7 @@ npx wrangler pages deploy out --project-name=<你的项目名称>
 - `src/i18n/`：路由、请求配置、导航封装  
 - `data/games/`：游戏 JSON 与 `manifest.json`  
 - `messages/`：各语言文案  
+- `wrangler.jsonc`：Cloudflare Pages 静态输出目录（`pages_build_output_dir`）与项目名称（`name`）  
 
 ## 新增游戏
 
