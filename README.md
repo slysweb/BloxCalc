@@ -70,13 +70,34 @@ npx serve out
 
 **不要**填 `npx wrangler deploy`：那是 **Workers** 部署，会误触 OpenNext，并在静态导出项目上出现 `pages-manifest.json` 缺失等错误。
 
-Git 集成构建环境下，Cloudflare 一般会为 Wrangler 注入凭据；若本地执行 `npm run pages:deploy`，需先按 [Wrangler 登录](https://developers.cloudflare.com/workers/wrangler/install-and-update/) 完成鉴权。
+Git 集成构建环境下，流水线通常会提供可用的 API 凭据；**若本地执行** `npm run pages:deploy`，需先按 [Wrangler 登录](https://developers.cloudflare.com/workers/wrangler/install-and-update/) 完成鉴权。
+
+### Deploy 失败：`Authentication error [code: 10000]`
+
+日志里若出现 **「authenticating via … `CLOUDFLARE_API_TOKEN`」** 且请求 `/pages/projects/…` 返回 **10000**，说明当前使用的 **API Token 没有 Cloudflare Pages 部署所需权限**（或已失效）。
+
+按下面逐项检查：
+
+1. **Pages 项目 → Settings → Environment variables**  
+   若你**手动添加**了 **`CLOUDFLARE_API_TOKEN`**：  
+   - 该变量会**覆盖**构建环境自带的令牌；权限不足时就会 10000。  
+   - **处理**：要么**删掉**该变量（让 Git 集成使用 Cloudflare 为本次构建注入的凭据），要么把它换成下面第 2 步创建的有 **Pages — Edit** 权限的令牌。
+
+2. **新建 API Token（需要保留自定义变量时）**  
+   Dashboard → **My Profile** → **API Tokens** → **Create Token**。  
+   使用 **「Edit Cloudflare Workers」** 模板，或自定义权限时至少包含：  
+   - **Account** → **Cloudflare Pages** → **Edit**（以及通常需要的 Account 只读项，按创建向导提示勾选）。  
+   创建后把新 token 填回 Pages 环境变量 **`CLOUDFLARE_API_TOKEN`**（不要提交到 Git）。
+
+3. **确认 `wrangler.jsonc` 里的 `name`** 与当前账号下 **Pages 项目名称** 完全一致（否则可能在鉴权通过后出现「项目不存在」类错误）。
+
+更多说明见官方文档：[API token 与权限](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)。
 
 ### 通用说明
 
 1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**，选择仓库与分支。  
 2. **Framework preset**：`None`。  
-3. **Environment variables**：按需设置 `NEXT_PUBLIC_SITE_URL`；Node 版本可用 `NODE_VERSION=22` 等。  
+3. **Environment variables**：按需设置 `NEXT_PUBLIC_SITE_URL`、Node 版本（如 `NODE_VERSION=22`）等。**不要随意设置 `CLOUDFLARE_API_TOKEN`**，除非你明确需要用它覆盖默认构建凭据且已为该令牌勾选 **Cloudflare Pages — Edit**（见上一节）。  
 4. monorepo 时，在 Pages 设置里配置 **Root directory**（例如 `BloxCalc`），并与 **Path** 一致。
 
 ### 本地仅用命令行发布（可选）
