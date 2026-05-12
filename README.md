@@ -6,7 +6,7 @@
 
 - Next.js 15、React 19、TypeScript  
 - [next-intl](https://next-intl.dev/)，路由前缀：`/en`、`/ja`、`/zh`、`/pt`、`/th`  
-- 游戏数据：`data/games/*.json` + `manifest.json`  
+- 游戏配置：`src/config/games/*.json`（在 `registry.ts` 中注册）  
 - 构建产物目录：`out/`  
 - Cloudflare：仓库根 **`wrangler.jsonc`** 中的 **`pages_build_output_dir`** 指向 `./out`（新版控制台若**没有**单独的「Build output directory」字段，可用此文件声明静态输出目录；详见下文）
 
@@ -122,15 +122,34 @@ npm run pages:deploy
 - `src/app/`：App Router 页面与布局  
 - `src/app/[locale]/[game-slug]/`：游戏详情与 `calculator` 子路由  
 - `src/i18n/`：路由、请求配置、导航封装  
-- `data/games/`：游戏 JSON 与 `manifest.json`  
+- `src/config/games/`：游戏 JSON（名称、简介、兑换码、FAQ）与 `registry.ts` 注册表  
 - `messages/`：各语言文案  
 - `wrangler.jsonc`：Cloudflare Pages 静态输出目录（`pages_build_output_dir`）与项目名称（`name`）  
 
 ## 新增游戏
 
-1. 在 `data/games/` 新增 `{slug}.json`。  
-2. 将 `slug` 写入 `data/games/manifest.json` 的 `slugs` 数组。  
-3. 重新执行 `npm run build` 以生成新的静态路径。
+1. 在 `src/config/games/` 新增 `{slug}.json`，结构见同目录下现有文件与 `types.ts`。  
+2. 在 `src/config/games/registry.ts` 中 `import` 该 JSON，并加入 `list` 数组。  
+3. 若该游戏需要与 Adopt Me / Blox Fruits 相同的「交易总价对比」计算器，在 `src/app/[locale]/[game-slug]/calculator/page.tsx` 的 `tradeCalcNamespace()` 中映射到新的 `messages` 命名空间，并在 `messages/*.json` 中补齐对应文案。  
+4. 执行 `npm run build` 以生成新的静态路径。
+
+## Adopt Me! 与 Blox Fruits 页面维护
+
+### Blox Fruits 兑换码
+
+- 兑换码会随版本轮换或失效，**请以游戏内与官方渠道为准**。  
+- 站点列表维护位置：`src/config/games/blox-fruits.json` 的 `codes` 数组（每项含 `code` 与可选 `reward`）。  
+- 更新后重新构建/部署即可。
+
+### Adopt Me! 兑换码
+
+- 该游戏常出现**长期无公开兑换码**的情况；此时 `codes` 可为空数组 `[]`，详情页仍会显示「当前无码」说明（见 `LatestCodes` 与 `messages` 中的 `GameDetail.noActiveCodes`）。  
+- 官方发布新码时，将条目写入 `src/config/games/adopt-me.json` 的 `codes` 即可。
+
+### 计算器与多语言
+
+- **Adopt Me! / Blox Fruits** 计算器为「双方总价对比」：`src/components/game/TradeTotalsFairnessCalculator.tsx`，文案在 `messages/*.json` 的 **`AdoptMeCalculator`**、**`BloxFruitsCalculator`** 命名空间。  
+- 游戏详情页的**标题旁简介与 FAQ 正文**目前来自各游戏的 **JSON（英文）**；界面 chrome（导航、按钮、计算器说明等）由 **next-intl** 按 locale 切换。若希望详情页正文也随语言切换，需要另行设计（例如在 `messages` 中按游戏分命名空间或增加分语言 JSON）。
 
 ## 许可证
 

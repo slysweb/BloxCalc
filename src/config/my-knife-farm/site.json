@@ -1,0 +1,51 @@
+{
+  "slug": "my-knife-farm",
+  "name": "My Knife Farm",
+  "description": "Roblox idle tycoon: merge knives, unlock zones, open crates, and scale cash per second. Use our My Knife Farm calculator hub for upgrades ROI, zone gates, and redeemable codes.",
+  "codes": [
+    {
+      "code": "RELEASE",
+      "reward": "Starter cash boost (example — verify in-game before redeem)"
+    },
+    {
+      "code": "LIKES",
+      "reward": "Small crate keys or cash (example — verify in-game)"
+    },
+    {
+      "code": "FOLLOW",
+      "reward": "Timed luck or cash buff (example — verify in-game)"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Where is the My Knife Farm calculator?",
+      "answer": "Open the ROI calculator for best upgrades payback times, or the zones list for requirements and crate odds. Both are linked from this hub and the site navigation on each My Knife Farm page."
+    },
+    {
+      "question": "How do I redeem My Knife Farm codes?",
+      "answer": "Use the in-game codes button (often on the side UI), paste a valid code, and confirm. Codes expire quickly; follow the developer’s social channels for the newest drops."
+    },
+    {
+      "question": "Are zone numbers and crate odds exact?",
+      "answer": "Tables are compiled for planning and SEO around “My Knife Farm zone requirements” and “knife rarity chances”. Balance patches can change values — always double-check against your live client."
+    }
+  ],
+  "guideSections": [
+    {
+      "heading": "Loop in one minute",
+      "paragraphs": [
+        "Buy knife slots and conveyor speed first so idle cash keeps flowing while you are AFK.",
+        "Rebirth or prestige layers (if present in your build) usually multiply global income — time them after a cash wall, not before a cheap upgrade spike.",
+        "Crates are RNG: plan keys around the zone that drops the rarity band you need, not only the highest zone you can enter."
+      ]
+    },
+    {
+      "heading": "When to use this hub",
+      "paragraphs": [
+        "Landing page: latest My Knife Farm codes plus a written guide aimed at the same keywords as “My Knife Farm codes” and “My Knife Farm calculator”.",
+        "ROI calculator: compares upgrade cost to cash-per-second gained so you can chase “My Knife Farm best upgrades” and “how to get cash fast” style decisions.",
+        "Zones list: every zone gate, notable drops, and illustrative crate probabilities for “My Knife Farm zone requirements” and “knife rarity chances” searches."
+      ]
+    }
+  ]
+}

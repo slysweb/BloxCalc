@@ -1,26 +1,14 @@
-import fs from 'fs';
-import path from 'path';
+import { gamesBySlug } from '@/config/games/registry';
+import type { GameConfig } from '@/config/games/types';
 import { cache } from 'react';
 
-export type GameRecord = {
-  slug: string;
-  name: string;
-  description: string;
-};
-
-const gamesDir = path.join(process.cwd(), 'data', 'games');
+export type { GameCode, GameConfig, GameFaqEntry } from '@/config/games/types';
+export type GameRecord = GameConfig;
 
 export function getGameSlugs(): string[] {
-  const raw = fs.readFileSync(path.join(gamesDir, 'manifest.json'), 'utf-8');
-  const manifest = JSON.parse(raw) as { slugs: string[] };
-  return manifest.slugs;
+  return Object.keys(gamesBySlug);
 }
 
-export const getGameBySlug = cache((slug: string): GameRecord | null => {
-  const filePath = path.join(gamesDir, `${slug}.json`);
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
-  const raw = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(raw) as GameRecord;
+export const getGameBySlug = cache((slug: string): GameConfig | null => {
+  return gamesBySlug[slug] ?? null;
 });

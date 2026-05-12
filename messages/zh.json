@@ -1,12 +1,169 @@
 {
+  "SiteLayout": {
+    "brand": "BloxCalc",
+    "navAria": "主导航",
+    "navHome": "首页",
+    "navMyKnifeFarm": "My Knife Farm",
+    "footerTagline": "面向 Roblox 玩家的现代计算器、兑换码与攻略——数字清晰、决策更快。",
+    "footerLocales": "语言",
+    "footerDisclaimer": "与 Roblox Corporation 无关联。游戏名称与商标归各自权利人所有。",
+    "footerCopyright": "© {year} BloxCalc",
+    "footerLegalNav": "法律与关于",
+    "footerPrivacy": "隐私政策",
+    "footerTerms": "服务条款",
+    "footerAbout": "关于"
+  },
   "HomePage": {
     "title": "首页",
-    "aboutLink": "关于",
-    "gamesHeading": "游戏"
+    "heroTagline": "面向 Roblox 模拟经营与 RNG 类游戏的免费专业工具。",
+    "searchPlaceholder": "搜索你的游戏...",
+    "searchAriaLabel": "搜索游戏",
+    "trendingHeading": "热门推荐",
+    "trendingMyKnifeFarmName": "My Knife Farm",
+    "recentUpdatesHeading": "最近更新",
+    "recentUpdatesItems": [
+      {
+        "date": "2026-05-12",
+        "text": "Blox Fruits：根据社区反馈复核并刷新当前可用兑换码列表与复制体验。"
+      },
+      {
+        "date": "2026-05-11",
+        "text": "Slime RNG：新增攻略页（含最新兑换码区块）与计算器入口，便于 RNG 向交易规划。"
+      },
+      {
+        "date": "2026-05-10",
+        "text": "My Knife Farm：ROI 计算器文案与默认提示优化，回本解读更清晰。"
+      },
+      {
+        "date": "2026-05-08",
+        "text": "Adopt Me：核对交易计算器页面说明，与当前攻略页布局保持一致。"
+      }
+    ],
+    "calculator": "计算器",
+    "codes": "兑换码",
+    "noResults": "没有匹配的游戏，请尝试其他名称或关键词。"
   },
   "AboutPage": {
-    "title": "关于",
+    "metaTitle": "关于",
+    "metaDescription": "面向 Roblox 的独立工具；榜单与兑换码等由社区维护，数据准确性取决于你的输入与来源时效。含联系方式及隐私、条款入口。",
+    "title": "关于 BloxCalc",
+    "subtitle": "面向 Roblox 玩家的计算器与攻略",
+    "intro": "BloxCalc 提供面向 Roblox 玩家的独立工具与页面——对比交易、规划升级、查阅兑换码，数字清晰、导航简单。内容与数据由社区驱动：梯度表、兑换码与机制来自玩家与创作者来源，数据准确性取决于你输入的内容以及这些社区参考是否仍与当前版本一致。本站为独立站点；除个别页面另有说明外，与 Roblox Corporation 及各游戏发行方无关联。",
+    "contactHeading": "联系",
+    "contactNote": "如有一般问题、建议或与网站相关的法律问询，欢迎发邮件，我们会在合适的情况下尽量回复。",
+    "legalHeading": "法律信息",
+    "linkPrivacy": "隐私政策",
+    "linkTerms": "服务条款",
     "homeLink": "首页"
+  },
+  "PrivacyPage": {
+    "metaTitle": "隐私政策",
+    "metaDescription": "说明你在使用 BloxCalc 计算器、攻略与相关页面时，我们如何处理信息。",
+    "title": "隐私政策",
+    "lastUpdated": "最近更新：2026 年 5 月 12 日",
+    "backToAbout": "返回关于页面",
+    "sections": [
+      {
+        "title": "概述",
+        "paragraphs": [
+          "本隐私政策说明 BloxCalc（「我们」）在运营本网站及其功能时如何处理相关信息。",
+          "本站面向一般信息用途，并非以 13 岁以下儿童为主要受众；但部分与 Roblox 相关的内容可能吸引未成年用户。如您为监护人并认为我们以令您担忧的方式收集了您子女的个人信息，请联系我们，我们将与您配合处理。"
+        ]
+      },
+      {
+        "title": "我们可能收集的信息",
+        "paragraphs": [
+          "与多数网站类似，服务器与托管方在您访问页面时可能会自动处理技术信息，例如 IP 地址、大致地区、浏览器类型、设备类型、时间戳与请求的 URL。我们也可能收集诊断或安全日志以维持服务稳定。",
+          "许多计算器在浏览器本地运行：您输入的数值通常保留在您的设备上，除非某项功能明确将数据发送至我们。请勿在站内任何表单中粘贴密码、密钥或其他高度敏感的个人数据。",
+          "若您向我们发送邮件（例如关于页面上的支持邮箱），我们会收到邮件内容及相关元数据（如您的邮箱地址），以便回复。"
+        ]
+      },
+      {
+        "title": "Cookie、分析与第三方",
+        "paragraphs": [
+          "我们可能使用 Cookie 或类似技术，用于基础功能、偏好（如语言）、分析或广告等，具体取决于网站在不同时期的配置。",
+          "第三方服务（包括分析、广告、内容分发网络或嵌入式组件）可能按其各自政策收集信息。在法律要求的情况下，我们会尽力提供相应的提示或控制方式。"
+        ]
+      },
+      {
+        "title": "我们如何使用信息",
+        "paragraphs": [
+          "我们将上述类别的信息用于运营与改进网站、衡量表现、防范滥用、履行法律义务，以及在您联系我们时进行沟通。"
+        ]
+      },
+      {
+        "title": "保存期限、安全与您的选择",
+        "paragraphs": [
+          "我们仅在实现本政策所述目的所需期间内保留信息，法律要求更长期限的除外。任何在线服务都无法保证绝对安全，但我们会采取合理措施保护所控制的信息。",
+          "根据您所在地区，您可能依法享有访问、更正、删除或限制处理个人信息的权利，或对某些用途提出反对。您也可以通过浏览器设置限制 Cookie。如需行使权利或提出问题，请使用关于页面上的邮箱与我们联系。"
+        ]
+      },
+      {
+        "title": "跨境传输与政策变更",
+        "paragraphs": [
+          "访问者可能来自多个国家/地区，信息可能在与您所在地数据保护法律不同的司法辖区被处理。",
+          "我们可能不时更新本政策；更新后，文首的「最近更新」日期将随之变化。在法律允许范围内，您在变更后继续使用网站即表示接受更新后的政策。"
+        ]
+      }
+    ]
+  },
+  "TermsPage": {
+    "metaTitle": "服务条款",
+    "metaDescription": "使用 BloxCalc 计算器、攻略与相关功能时需遵守的规则。",
+    "title": "服务条款",
+    "lastUpdated": "最近更新：2026 年 5 月 12 日",
+    "backToAbout": "返回关于页面",
+    "sections": [
+      {
+        "title": "协议的接受",
+        "paragraphs": [
+          "本服务条款（「条款」）规范您对 BloxCalc 及其内容（「本服务」）的访问与使用。使用本服务即表示您同意本条款及我们的《隐私政策》。",
+          "若您不同意，请勿使用本服务。我们可能变更条款；更新日期将显示在本页顶部。在适当情况下，我们可能对重大变更作出合理提示。"
+        ]
+      },
+      {
+        "title": "服务内容",
+        "paragraphs": [
+          "BloxCalc 提供与 Roblox 游戏相关的信息类工具与内容，包括计算器、攻略以及（如可用）兑换码列表。",
+          "社区估值、兑换码与游戏机制经常变化。功能可能被更新、暂停或移除。我们不保证在任意时刻的完整性、准确性或可用性。"
+        ]
+      },
+      {
+        "title": "非关联与不构成背书",
+        "paragraphs": [
+          "BloxCalc 与 Roblox Corporation 无关联。游戏名称与商标归各自权利人所有。提及某款游戏不代表获得赞助或背书。",
+          "计算器结果取决于您输入的数值及第三方或社区榜单。我们不提供游戏内物品、货币或代为交易。"
+        ]
+      },
+      {
+        "title": "免责声明",
+        "paragraphs": [
+          "本服务按「现状」和「可用」基础提供，在法律允许的最大范围内，不提供任何明示或默示担保，包括对适销性、特定用途适用性及不侵权的默示担保。"
+        ]
+      },
+      {
+        "title": "责任限制",
+        "paragraphs": [
+          "在法律允许的最大范围内，BloxCalc 及其运营方不对因您使用本服务而产生的任何间接、附带、特殊、后果性或惩罚性损害，或利润、商誉、数据等无形损失承担责任。",
+          "在任何情况下，因本服务引起或与之相关的我方总责任，以（A）您在索赔前十二个月为使用本服务向我们支付的金额（对免费网站通常为 零）与（B）五十美元（USD $50）二者中较高者为上限，强制性法律另有规定的除外。"
+        ]
+      },
+      {
+        "title": "可接受的使用",
+        "paragraphs": [
+          "您同意不以滥用方式使用本服务——包括未经授权的访问尝试、干扰服务器、以损害性能的方式抓取数据，或利用本服务从事违法或侵犯第三方权利的行为。",
+          "若我们合理认为您违反本条款或对我们或他人造成风险，我们可能暂停或终止访问。"
+        ]
+      },
+      {
+        "title": "其他",
+        "paragraphs": [
+          "本条款受网站运营方所在司法辖区适用法律管辖，冲突法规则除外，但您所在地强制性消费者保护另有规定的除外。",
+          "若某条款不可执行，其余条款仍然有效。未执行某条款不构成放弃该权利。",
+          "如有关于本条款的问题，请通过关于页面所列邮箱与我们联系。"
+        ]
+      }
+    ]
   },
   "Breadcrumbs": {
     "home": "首页",
@@ -16,6 +173,112 @@
   "GameCalculator": {
     "metaTitleSuffix": "计算器",
     "heading": "{game} 计算器",
+    "lead": "用你信任的同一套社区估值表，对比「你给出的总价」和「你收到的总价」。",
     "placeholder": "计算器界面将放在这里。"
+  },
+  "AdoptMeCalculator": {
+    "metaDescription": "Adopt Me! 交易辅助：输入你给出的总价与对方给出的总价，快速查看差距。",
+    "intro": "两侧请使用同一张可信估值表的同一套单位。本工具只比较你输入的数字，不会替你查询宠物。",
+    "labelYours": "你给出的总价值",
+    "labelTheirs": "你收到的总价值",
+    "placeholderNumber": "例如 42",
+    "hint": "两侧请使用同一尺度（例如同一张表的「普通单位」）。",
+    "reset": "清空输入",
+    "gapLabel": "绝对差值",
+    "verdictEqual": "两侧总价一致——成交前仍请核对年龄、药水与骑飞等状态。",
+    "verdictYouOver": "按该尺度，你大约多给了 {amount}——除非刻意加价，否则这笔交易更偏向对方。",
+    "verdictTheyOver": "按该尺度，对方大约多给了 {amount}——除非另有约定，否则这笔交易更偏向你。",
+    "disclaimer": "社区估值每日变化且不同榜单会有差异。本页仅供信息参考，与 Uplift Games 或 Roblox 无关联。"
+  },
+  "BloxFruitsCalculator": {
+    "metaDescription": "Blox Fruits 交易辅助：在确认交易前对比双方果实/物品的总估值。",
+    "intro": "请用同一张梯度表，分别填写双方放入的果实与配饰等的合计价值。",
+    "labelYours": "你给出的总价值",
+    "labelTheirs": "你收到的总价值",
+    "placeholderNumber": "例如 120",
+    "hint": "若同时包含实体果实与库存估值，请与你使用的榜单单位保持一致。",
+    "reset": "清空输入",
+    "gapLabel": "绝对差值",
+    "verdictEqual": "纸面总价一致——仍请在交易窗口核对觉醒、等级与捆绑物品。",
+    "verdictYouOver": "按该尺度，你大约多给了 {amount}——若非刻意多付，请先暂停确认。",
+    "verdictTheyOver": "按该尺度，对方大约多给了 {amount}——请确认交易窗口没有遗漏关键项。",
+    "disclaimer": "版本补丁会改变果实热度；数字完全取决于你的输入。请以游戏内最终交易为准。与 Blox Fruits 或 Roblox 无关联。"
+  },
+  "GameDetail": {
+    "latestCodesHeading": "最新兑换码",
+    "noActiveCodes": "当前没有收录可用兑换码。大型更新后请关注官方社交渠道——有新码时我们会更新此区域。",
+    "clickToCopy": "点击复制",
+    "copied": "已复制",
+    "quickNavHeading": "快速导航",
+    "quickNavDescription": "前往本游戏的计算器页面。",
+    "faqHeading": "常见问题"
+  },
+  "MyKnifeFarm": {
+    "subNavAria": "My Knife Farm 分区导航",
+    "navHub": "攻略与兑换码",
+    "navRoi": "升级性价比",
+    "navZones": "区域与箱子",
+    "metaHubTitle": "My Knife Farm 兑换码与计算器攻略",
+    "metaHubDescription": "My Knife Farm 最新兑换码、实用攻略，并链接升级 ROI 计算器与区域门槛数据，覆盖 calculator / codes 类搜索意图。",
+    "hubH1": "My Knife Farm — 兑换码、攻略与计算器入口",
+    "guideHeading": "综合指南",
+    "hubQuickNavBody": "打开升级 ROI 计算器查看回本排序，或查看区域表了解门槛与刀具稀有度概率。",
+    "hubLinkRoi": "My Knife Farm 升级 ROI 计算器（最佳升级、快速刷钱）",
+    "hubLinkZones": "My Knife Farm 区域列表（门槛与箱子刀具概率）",
+    "metaRoiTitle": "My Knife Farm 最佳升级 ROI 计算器",
+    "metaRoiDescription": "按回本时间与每千刀带来的 $/s 效率排序，帮助决策「最佳升级」与「如何更快刷现金」。",
+    "breadcrumbRoi": "ROI 计算器",
+    "roiH1": "My Knife Farm 升级性价比（ROI）计算器",
+    "roiLead": "对比升级花费与每秒现金增量。回本时间越短通常滚雪球越快，适合冲早期现金。",
+    "roiBalanceLabel": "当前现金（可选）",
+    "roiBalancePlaceholder": "例如 50000",
+    "roiOnlyAffordable": "隐藏超出我现金的升级",
+    "roiIntro": "表格按回本时间排序（基础价格 ÷ Δ $/s）。效率列为每花费 $1,000 带来的 Δ $/s（越高越好）。",
+    "roiColUpgrade": "升级",
+    "roiColCost": "花费",
+    "roiColDelta": "Δ $/s",
+    "roiColPayback": "回本",
+    "roiColEfficiency": "效率 ×1k",
+    "roiUnaffordable": "超出预算",
+    "smartHeading": "智能升级清单",
+    "smartIntro": "此处 ROI = 基础价格 ÷ 倍率增量（数值越低越好，表示每 +1 倍率付出的成本更低）。ROI 最低的一项会高亮为「最佳性价比」。",
+    "smartColUpgrade": "升级",
+    "smartColBasePrice": "基础价格",
+    "smartColMultIncrease": "倍率增量 Δ",
+    "smartColRoi": "ROI（价 ÷ 倍率 Δ）",
+    "smartBestValue": "最佳性价比",
+    "smartFootnote": "倍率 Δ 为本档对收入倍率的建模增量；若 ROI 相同，按数据中的先后顺序取第一项。",
+    "metaZonesTitle": "My Knife Farm 区域门槛与刀具稀有概率",
+    "metaZonesDescription": "汇总各区域现金门槛、主要掉落与示例箱子刀具概率，便于检索 zone requirements、knife rarity chances。",
+    "breadcrumbZones": "区域列表",
+    "zonesH1": "My Knife Farm 区域 — 门槛、掉落与箱子概率",
+    "zonesLead": "用于规划现金墙、钥匙获取与开箱节奏。概率为示例，请以当前版本实机为准。",
+    "zonesColZone": "区域",
+    "zonesColCash": "现金门槛",
+    "zonesColKeys": "钥匙 / 解锁",
+    "zonesColDrops": "主要掉落",
+    "zonesColCrates": "箱子刀具概率",
+    "dataDisclaimer": "示例 / 社区向数值，用于演示 My Knife Farm 计算器、兑换码、区域与稀有度相关页面。请在当前版本游戏内再次核实。",
+    "ttgHeading": "达成目标所需时间（下一批区域）",
+    "ttgIntro": "填写当前现金与每秒现金。我们使用上方各区域的现金门槛估算还要多久能凑够「下一批」解锁（不含钥匙、任务等非现金条件）。",
+    "ttgCurrentCash": "当前现金",
+    "ttgCashPerSecond": "每秒现金（$/s）",
+    "ttgPlaceholderCash": "例如 40000",
+    "ttgPlaceholderCps": "例如 120",
+    "ttgNeedValidCash": "请输入有效的当前现金（≥0）以查看后续区域目标。",
+    "ttgNeedValidCps": "请输入大于 0 的每秒现金以查看预计耗时。",
+    "ttgAllCashGatesMet": "你已满足表中所有现金门槛——若仍无法进入，多半是钥匙、任务或其他条件未满足。",
+    "ttgColZone": "区域",
+    "ttgColCashGate": "现金门槛",
+    "ttgColRemaining": "还差现金",
+    "ttgColTime": "凑够现金约需",
+    "zonesSeoTableHeading": "My Knife Farm 区域要求（搜索摘要表）",
+    "zonesSeoTableCaption": "面向检索的结构化参考：区域名、最低现金门槛（数值）、解锁条件、主要掉落与示例箱子刀具稀有度；与主表及计算器使用的 cashGoal 一致。",
+    "zonesSeoColZone": "区域",
+    "zonesSeoColMinCash": "最低现金（数值）",
+    "zonesSeoColUnlock": "钥匙 / 解锁",
+    "zonesSeoColDrops": "主要掉落",
+    "zonesSeoColCrates": "箱子刀具概率",
+    "zonesSidebarAdsAria": "广告侧栏"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "slug": "blox-fruits",
+  "name": "Blox Fruits",
+  "description": "Redeem codes for boosts and refunds, plus a quick trade fairness check when you already know fruit values from your favorite tier list.",
+  "codes": [
+    { "code": "KITTGAMING", "reward": "20 minutes of 2× EXP" },
+    { "code": "JCWK", "reward": "20 minutes of 2× EXP" },
+    { "code": "MAGICBUS", "reward": "20 minutes of 2× EXP" },
+    { "code": "SUB2CAPTAINMAUI", "reward": "20 minutes of 2× EXP" },
+    { "code": "SUB2FER999", "reward": "20 minutes of 2× EXP" },
+    { "code": "KITT_RESET", "reward": "Stat refund" },
+    { "code": "SUB2GAMERROBOT_RESET1", "reward": "Stat refund" },
+    { "code": "BIGNEWS", "reward": "In-game title" },
+    { "code": "FUDD10", "reward": "1 Beli" },
+    { "code": "FUDD10_V2", "reward": "2 Beli" }
+  ],
+  "faq": [
+    {
+      "question": "How do I redeem codes in Blox Fruits?",
+      "answer": "Open the in-game menu, find the codes / redeem area (wording changes between updates), paste a valid code, and confirm. Codes are one-time per account and can expire without notice — retry spelling and check official patch notes if one fails."
+    },
+    {
+      "question": "Where is the trade calculator?",
+      "answer": "Use Quick navigation on this hub page, or open the Calculator route from the site header. Enter totals from the same value list for both sides so the gap result is meaningful."
+    },
+    {
+      "question": "Are these codes guaranteed to work?",
+      "answer": "No. Blox Fruits rotates codes frequently. Treat this list as a convenience snapshot and verify in-game; we are not affiliated with the developers."
+    }
+  ]
+}

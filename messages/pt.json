@@ -1,12 +1,169 @@
 {
+  "SiteLayout": {
+    "brand": "BloxCalc",
+    "navAria": "Principal",
+    "navHome": "Início",
+    "navMyKnifeFarm": "My Knife Farm",
+    "footerTagline": "Calculadoras modernas, códigos e guias para jogos Roblox — números claros e decisões rápidas.",
+    "footerLocales": "Idioma",
+    "footerDisclaimer": "Não afiliado à Roblox Corporation. Nomes e marcas pertencem aos respectivos titulares.",
+    "footerCopyright": "© {year} BloxCalc",
+    "footerLegalNav": "Legal e sobre",
+    "footerPrivacy": "Política de Privacidade",
+    "footerTerms": "Termos de Serviço",
+    "footerAbout": "Sobre"
+  },
   "HomePage": {
     "title": "Início",
-    "aboutLink": "Sobre",
-    "gamesHeading": "Jogos"
+    "heroTagline": "Ferramentas profissionais gratuitas para simuladores Roblox e jogos RNG.",
+    "searchPlaceholder": "Busque seu jogo...",
+    "searchAriaLabel": "Buscar seu jogo",
+    "trendingHeading": "Em alta",
+    "trendingMyKnifeFarmName": "My Knife Farm",
+    "recentUpdatesHeading": "Atualizações recentes",
+    "recentUpdatesItems": [
+      {
+        "date": "2026-05-12",
+        "text": "Blox Fruits: lista de códigos ao vivo revisada e cópia revalidada após feedback da comunidade."
+      },
+      {
+        "date": "2026-05-11",
+        "text": "Slime RNG: novo hub com bloco de códigos e rota da calculadora para planejamento estilo RNG."
+      },
+      {
+        "date": "2026-05-10",
+        "text": "My Knife Farm: textos e padrões da calculadora de ROI ajustados para leitura de payback mais clara."
+      },
+      {
+        "date": "2026-05-08",
+        "text": "Adopt Me: página da calculadora de trocas alinhada às orientações do hub atual."
+      }
+    ],
+    "calculator": "Calculadora",
+    "codes": "Códigos",
+    "noResults": "Nenhum jogo corresponde à busca. Tente outro nome ou palavra-chave."
   },
   "AboutPage": {
-    "title": "Sobre",
+    "metaTitle": "Sobre",
+    "metaDescription": "Ferramentas independentes para Roblox, com referências orientadas pela comunidade e expectativas claras sobre a precisão dos dados. Contato, privacidade e termos.",
+    "title": "Sobre o BloxCalc",
+    "subtitle": "Calculadoras e guias para jogadores de Roblox",
+    "intro": "O BloxCalc oferece ferramentas independentes para jogadores de Roblox — compare trocas, planeje upgrades e veja códigos com números claros e navegação rápida. O conteúdo é orientado pela comunidade: listas de tiers, códigos e mecânicas seguem fontes de jogadores e criadores, então a precisão dos dados depende do que você digita e de quão atuais essas referências comunitárias estão. Somos um site independente e não somos afiliados à Roblox Corporation ou às editoras dos jogos, salvo quando indicado em uma página específica.",
+    "contactHeading": "Contato",
+    "contactNote": "Para dúvidas gerais, feedback ou questões jurídicas sobre este site, envie um e-mail e responderemos quando for apropriado.",
+    "legalHeading": "Legal",
+    "linkPrivacy": "Política de Privacidade",
+    "linkTerms": "Termos de Serviço",
     "homeLink": "Início"
+  },
+  "PrivacyPage": {
+    "metaTitle": "Política de Privacidade",
+    "metaDescription": "Como o BloxCalc trata informações quando você usa calculadoras, guias e páginas relacionadas.",
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: 12 de maio de 2026",
+    "backToAbout": "Voltar para Sobre",
+    "sections": [
+      {
+        "title": "Visão geral",
+        "paragraphs": [
+          "Esta Política de Privacidade descreve como o BloxCalc (\"nós\") trata informações em conexão com este site e seus recursos.",
+          "O site é um recurso informativo geral. Não é direcionado principalmente a crianças menores de 13 anos, mas conteúdo relacionado a Roblox pode interessar usuários mais jovens. Se você é responsável e acredita que coletamos dados pessoais de seu filho de forma preocupante, entre em contato para que possamos ajudar."
+        ]
+      },
+      {
+        "title": "Informações que podemos coletar",
+        "paragraphs": [
+          "Como a maioria dos sites, provedores de hospedagem podem processar automaticamente dados técnicos quando você carrega páginas — por exemplo endereço IP, região aproximada, tipo de navegador, tipo de dispositivo, carimbos de data/hora e URLs solicitadas. Também podemos coletar logs de diagnóstico ou segurança para manter o serviço confiável.",
+          "Muitas calculadoras rodam no seu navegador: valores que você digita podem permanecer no dispositivo, salvo quando um recurso envia dados explicitamente a nós. Não cole senhas, segredos ou dados pessoais altamente sensíveis em formulários do site.",
+          "Se você nos enviar um e-mail (por exemplo para o suporte indicado na página Sobre), recebemos o conteúdo da mensagem e metadados associados (como seu endereço de e-mail) para responder."
+        ]
+      },
+      {
+        "title": "Cookies, análises e terceiros",
+        "paragraphs": [
+          "Podemos usar cookies ou tecnologias semelhantes para funcionalidade básica, preferências (como idioma), análises ou publicidade, dependendo de como o site estiver configurado.",
+          "Serviços de terceiros (incluindo análises, publicidade, CDNs ou widgets incorporados) podem coletar informações sob suas próprias políticas. Quando exigido, buscamos avisos ou controles compatíveis com a lei aplicável."
+        ]
+      },
+      {
+        "title": "Como usamos as informações",
+        "paragraphs": [
+          "Usamos as categorias de informação acima para operar e melhorar o site, medir desempenho, proteger contra abuso, cumprir obrigações legais e nos comunicar quando você entra em contato."
+        ]
+      },
+      {
+        "title": "Retenção, segurança e suas escolhas",
+        "paragraphs": [
+          "Retemos informações apenas pelo tempo necessário para as finalidades descritas aqui, salvo quando a lei exigir período maior. Nenhum serviço online garante segurança perfeita, mas adotamos medidas razoáveis para proteger as informações sob nosso controle.",
+          "Dependendo de onde você mora, pode ter direitos de acesso, correção, exclusão ou restrição de certos tratamentos de dados pessoais, ou de se opor a determinados usos. Você também pode bloquear cookies nas configurações do navegador. Para exercer direitos ou tirar dúvidas, use o e-mail na página Sobre."
+        ]
+      },
+      {
+        "title": "Transferências internacionais e alterações",
+        "paragraphs": [
+          "Visitantes podem acessar o site de muitos países. As informações podem ser processadas em jurisdições com leis de proteção de dados diferentes das suas.",
+          "Podemos atualizar esta política periodicamente. A data de \"Última atualização\" no topo mudará quando isso ocorrer. O uso continuado após alterações significa que você aceita a política atualizada na medida permitida por lei."
+        ]
+      }
+    ]
+  },
+  "TermsPage": {
+    "metaTitle": "Termos de Serviço",
+    "metaDescription": "Regras para usar calculadoras, guias e recursos relacionados do BloxCalc.",
+    "title": "Termos de Serviço",
+    "lastUpdated": "Última atualização: 12 de maio de 2026",
+    "backToAbout": "Voltar para Sobre",
+    "sections": [
+      {
+        "title": "Aceitação",
+        "paragraphs": [
+          "Estes Termos de Serviço (\"Termos\") regem seu acesso e uso do BloxCalc e de seu conteúdo (\"Serviço\"). Ao usar o Serviço, você concorda com estes Termos e com nossa Política de Privacidade.",
+          "Se não concordar, não use o Serviço. Podemos alterar estes Termos; a data no topo desta página será atualizada. Mudanças materiais podem ser comunicadas de forma razoável quando apropriado."
+        ]
+      },
+      {
+        "title": "O Serviço",
+        "paragraphs": [
+          "O BloxCalc oferece ferramentas e conteúdo informativos relacionados a jogos Roblox, incluindo calculadoras, guias e listagens de códigos quando disponíveis.",
+          "Valores de comunidade, códigos e mecânicas mudam com frequência. Recursos podem ser atualizados, pausados ou removidos. Não garantimos integralidade, precisão ou disponibilidade em todo momento."
+        ]
+      },
+      {
+        "title": "Sem afiliação; sem endosso",
+        "paragraphs": [
+          "O BloxCalc não é afiliado à Roblox Corporation. Nomes e marcas de jogos pertencem aos respectivos titulares. Referências a um jogo não implicam patrocínio ou endosso.",
+          "Os resultados das calculadoras dependem dos números que você informa e de listas de terceiros ou da comunidade. Não fornecemos itens, moeda ou trocas dentro do jogo."
+        ]
+      },
+      {
+        "title": "Isenção de garantias",
+        "paragraphs": [
+          "O SERVIÇO É FORNECIDO \"COMO ESTÁ\" E \"CONFORME DISPONÍVEL\", SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO GARANTIAS IMPLÍCITAS DE COMERCIABILIDADE, ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO, NA MÁXIMA EXTENSÃO PERMITIDA POR LEI."
+        ]
+      },
+      {
+        "title": "Limitação de responsabilidade",
+        "paragraphs": [
+          "NA MÁXIMA EXTENSÃO PERMITIDA POR LEI, O BLOXCALC E SEUS OPERADORES NÃO SERÃO RESPONSÁVEIS POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS, CONSEQUENCIAIS OU EXEMPLARES, OU POR PERDA DE LUCROS, FUNDO DE COMÉRCIO, DADOS OU OUTRAS PERDAS INTANGÍVEIS, DECORRENTES OU RELACIONADAS AO USO DO SERVIÇO.",
+          "EM QUALQUER CASO, NOSSA RESPONSABILIDADE AGREGADA DECORRENTE OU RELACIONADA AO SERVIÇO SERÁ LIMITADA AO MAIOR ENTRE (A) O VALOR QUE VOCÊ NOS PAGOU PELO SERVIÇO NOS DOZE MESES ANTERIORES À REIVINDICAÇÃO (GERALMENTE ZERO PARA UM SITE GRATUITO) OU (B) CINQUENTA DÓLARES AMERICANOS (USD 50), SALVO QUANDO A LEI APLICÁVEL EXIGIR O CONTRÁRIO."
+        ]
+      },
+      {
+        "title": "Uso aceitável",
+        "paragraphs": [
+          "Você concorda em não usar indevidamente o Serviço — incluindo tentativas de acesso não autorizado, interrupção de servidores, scraping que prejudique o desempenho ou uso do Serviço para violar a lei ou direitos de terceiros.",
+          "Podemos suspender ou encerrar o acesso se acreditarmos razoavelmente que você violou estes Termos ou criou risco para nós ou terceiros."
+        ]
+      },
+      {
+        "title": "Disposições gerais",
+        "paragraphs": [
+          "Estes Termos são regidos pelas leis aplicáveis à jurisdição do operador do site, sem considerar conflitos de leis, exceto quando proibido pelas proteções ao consumidor locais.",
+          "Se uma disposição for inexequível, as demais permanecem em vigor. A falha em fazer cumprir uma disposição não constitui renúncia.",
+          "Dúvidas sobre estes Termos? Entre em contato pelo e-mail listado na página Sobre."
+        ]
+      }
+    ]
   },
   "Breadcrumbs": {
     "home": "Início",
@@ -16,6 +173,112 @@
   "GameCalculator": {
     "metaTitleSuffix": "Calculadora",
     "heading": "Calculadora de {game}",
+    "lead": "Compare o que você entrega com o que recebe usando totais da mesma lista de valores da comunidade em que confia.",
     "placeholder": "A interface da calculadora fica aqui."
+  },
+  "AdoptMeCalculator": {
+    "metaDescription": "Ajuda de troca para Adopt Me!: insira o seu total e o total deles para ver a diferença antes de confirmar.",
+    "intro": "Use a mesma tabela e a mesma unidade nos dois lados. A ferramenta só compara os números que você digita — não consulta pets.",
+    "labelYours": "Valor total que você está entregando",
+    "labelTheirs": "Valor total que você está recebendo",
+    "placeholderNumber": "ex.: 42",
+    "hint": "Mantenha a mesma escala nos dois campos (por exemplo, as mesmas unidades da mesma folha).",
+    "reset": "Limpar campos",
+    "gapLabel": "Diferença absoluta",
+    "verdictEqual": "Os totais batem — ainda confira idade, poções e ride/fly antes de aceitar.",
+    "verdictYouOver": "Nesta escala, você está entregando cerca de {amount} a mais — a troca favorece a outra parte, salvo se fosse intencional.",
+    "verdictTheyOver": "Nesta escala, eles estão entregando cerca de {amount} a mais — a troca favorece você, salvo acordos extras.",
+    "disclaimer": "Valores da comunidade mudam diariamente e variam por lista. Esta página é só informativa e não é afiliada à Uplift Games ou Roblox."
+  },
+  "BloxFruitsCalculator": {
+    "metaDescription": "Ajuda de troca para Blox Fruits: compare o valor total dos seus frutos com o deles antes de fechar.",
+    "intro": "Informe os totais de frutos/acessórios de cada lado usando a mesma tier list nas duas colunas.",
+    "labelYours": "Valor total que você está entregando",
+    "labelTheirs": "Valor total que você está recebendo",
+    "placeholderNumber": "ex.: 120",
+    "hint": "Se misturar frutos físicos e valor guardado, mantenha as unidades coerentes com a lista que você segue.",
+    "reset": "Limpar campos",
+    "gapLabel": "Diferença absoluta",
+    "verdictEqual": "Os totais fecham no papel — confira despertares, níveis e itens agrupados na janela de troca.",
+    "verdictYouOver": "Nesta escala, você está oferecendo cerca de {amount} a mais — pause salvo overpay intencional.",
+    "verdictTheyOver": "Nesta escala, eles estão oferecendo cerca de {amount} a mais — confirme se nada importante falta na janela.",
+    "disclaimer": "A demanda muda a cada patch. Os números são os que você digita; confirme a troca final no jogo. Não afiliado a Blox Fruits ou Roblox."
+  },
+  "GameDetail": {
+    "latestCodesHeading": "Códigos mais recentes",
+    "noActiveCodes": "Não há códigos listados agora. Acompanhe os canais oficiais após grandes atualizações — atualizamos este bloco quando surgirem novos códigos.",
+    "clickToCopy": "Clique para copiar",
+    "copied": "Copiado",
+    "quickNavHeading": "Navegação rápida",
+    "quickNavDescription": "Abra a calculadora deste jogo.",
+    "faqHeading": "Perguntas frequentes"
+  },
+  "MyKnifeFarm": {
+    "subNavAria": "Secções My Knife Farm",
+    "navHub": "Guia e códigos",
+    "navRoi": "ROI de upgrades",
+    "navZones": "Zonas e caixas",
+    "metaHubTitle": "My Knife Farm — códigos e guia com calculadoras",
+    "metaHubDescription": "Códigos atuais, guia prático e links para calculadora de ROI de upgrades e requisitos de zonas (intenção calculator / codes).",
+    "hubH1": "My Knife Farm — códigos, guia e hub de calculadoras",
+    "guideHeading": "Guia completo",
+    "hubQuickNavBody": "Abra a calculadora de ROI para paybacks ou a lista de zonas para portões e chances de facas.",
+    "hubLinkRoi": "Calculadora de ROI de upgrades (melhores upgrades, cash rápido)",
+    "hubLinkZones": "Lista de zonas (requisitos e chances em caixas)",
+    "metaRoiTitle": "My Knife Farm — calculadora ROI dos melhores upgrades",
+    "metaRoiDescription": "Ordene upgrades por tempo de retorno e $/s por mil dólares para focar melhores upgrades e farm de cash.",
+    "breadcrumbRoi": "Calculadora ROI",
+    "roiH1": "Calculadora de ROI de upgrades — My Knife Farm",
+    "roiLead": "Compare custo com ganho de cash por segundo. Payback menor costuma compor mais rápido.",
+    "roiBalanceLabel": "Seu cash (opcional)",
+    "roiBalancePlaceholder": "ex.: 50000",
+    "roiOnlyAffordable": "Ocultar upgrades acima do meu cash",
+    "roiIntro": "Linhas ordenadas por payback (preço base ÷ Δ $/s). Eficiência = Δ $/s por US$ 1.000 (maior é melhor).",
+    "roiColUpgrade": "Upgrade",
+    "roiColCost": "Custo",
+    "roiColDelta": "Δ $/s",
+    "roiColPayback": "Payback",
+    "roiColEfficiency": "Eficiência ×1k",
+    "roiUnaffordable": "acima do orçamento",
+    "smartHeading": "Lista inteligente de upgrades",
+    "smartIntro": "ROI = preço base ÷ ganho de multiplicador (menor é melhor: menos custo por +1 de multiplicador). O menor ROI aparece como Melhor custo-benefício.",
+    "smartColUpgrade": "Upgrade",
+    "smartColBasePrice": "Preço base",
+    "smartColMultIncrease": "Δ multiplicador",
+    "smartColRoi": "ROI (preço ÷ Δ mult)",
+    "smartBestValue": "Melhor valor",
+    "smartFootnote": "Δ do multiplicador é o ganho modelado neste nível. Empates usam a primeira entrada na ordem dos dados.",
+    "metaZonesTitle": "My Knife Farm — requisitos de zonas e chances de raridade",
+    "metaZonesDescription": "Todas as zonas com cash necessário, drops e odds ilustrativas de facas em caixas.",
+    "breadcrumbZones": "Lista de zonas",
+    "zonesH1": "Zonas My Knife Farm — requisitos, drops e odds de caixas",
+    "zonesLead": "Planeie paredes de cash, chaves e sessões de caixas. Odds são exemplos — confirme no patch atual.",
+    "zonesColZone": "Zona",
+    "zonesColCash": "Requisito de cash",
+    "zonesColKeys": "Chaves / desbloqueio",
+    "zonesColDrops": "Drops notáveis",
+    "zonesColCrates": "Odds de facas (caixas)",
+    "dataDisclaimer": "Números de exemplo/comunidade para UX e SEO. Confirme sempre no cliente atual.",
+    "ttgHeading": "Tempo até o objetivo (próximas zonas)",
+    "ttgIntro": "Introduza o cash atual e o cash por segundo. Usamos o requisito de cash de cada zona para estimar quanto falta até os próximos desbloqueios (chaves/missões não entram).",
+    "ttgCurrentCash": "Cash atual",
+    "ttgCashPerSecond": "Cash por segundo",
+    "ttgPlaceholderCash": "ex.: 40000",
+    "ttgPlaceholderCps": "ex.: 120",
+    "ttgNeedValidCash": "Introduza um cash atual válido (≥ 0) para ver as próximas zonas.",
+    "ttgNeedValidCps": "Introduza um cash/s maior que 0 para ver tempos estimados.",
+    "ttgAllCashGatesMet": "Já cumpre todos os requisitos de cash listados — podem faltar chaves, missões ou outros bloqueios.",
+    "ttgColZone": "Zona",
+    "ttgColCashGate": "Portão de cash",
+    "ttgColRemaining": "Cash em falta",
+    "ttgColTime": "Tempo até o portão",
+    "zonesSeoTableHeading": "Requisitos de zonas My Knife Farm (resumo para busca)",
+    "zonesSeoTableCaption": "Referência estruturada: zonas, cash mínimo numérico, desbloqueios, drops e chances ilustrativas de facas em caixas. Espelha a tabela principal e o campo cashGoal usado nas calculadoras.",
+    "zonesSeoColZone": "Zona",
+    "zonesSeoColMinCash": "Cash mínimo (numérico)",
+    "zonesSeoColUnlock": "Chaves / desbloqueio",
+    "zonesSeoColDrops": "Drops notáveis",
+    "zonesSeoColCrates": "Odds de facas (caixas)",
+    "zonesSidebarAdsAria": "Barra lateral de anúncios"
   }
 }

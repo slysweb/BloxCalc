@@ -1,12 +1,169 @@
 {
+  "SiteLayout": {
+    "brand": "BloxCalc",
+    "navAria": "Primary",
+    "navHome": "Home",
+    "navMyKnifeFarm": "My Knife Farm",
+    "footerTagline": "Modern calculators, codes, and guides for Roblox games — built for fast decisions and clear numbers.",
+    "footerLocales": "Language",
+    "footerDisclaimer": "Not affiliated with Roblox Corporation. Game names and trademarks belong to their respective owners.",
+    "footerCopyright": "© {year} BloxCalc",
+    "footerLegalNav": "Legal and about",
+    "footerPrivacy": "Privacy Policy",
+    "footerTerms": "Terms of Service",
+    "footerAbout": "About"
+  },
   "HomePage": {
     "title": "Home",
-    "aboutLink": "About",
-    "gamesHeading": "Games"
+    "heroTagline": "Free Professional Tools for Roblox Simulators & RNG Games.",
+    "searchPlaceholder": "Search your game...",
+    "searchAriaLabel": "Search your game",
+    "trendingHeading": "Trending Now",
+    "trendingMyKnifeFarmName": "My Knife Farm",
+    "recentUpdatesHeading": "Recent updates",
+    "recentUpdatesItems": [
+      {
+        "date": "2026-05-12",
+        "text": "Blox Fruits: refreshed the live codes list and rechecked copy-to-clipboard rows after community reports."
+      },
+      {
+        "date": "2026-05-11",
+        "text": "Slime RNG: new hub with Latest Codes block and calculator route wired for RNG-style trade planning."
+      },
+      {
+        "date": "2026-05-10",
+        "text": "My Knife Farm: ROI calculator labels and default hints updated for clearer break-even reads."
+      },
+      {
+        "date": "2026-05-08",
+        "text": "Adopt Me: trade calculator page reviewed so totals guidance matches the current hub layout."
+      }
+    ],
+    "calculator": "Calculator",
+    "codes": "Codes",
+    "noResults": "No games match your search. Try another name or keyword."
   },
   "AboutPage": {
-    "title": "About",
+    "metaTitle": "About",
+    "metaDescription": "Independent tools for Roblox trades and upgrades—community-driven tier and code references with clear expectations on data accuracy. Contact, privacy policy, and terms.",
+    "title": "About BloxCalc",
+    "subtitle": "Calculators and guides for Roblox players",
+    "intro": "Independent tools for Roblox players—compare trades, plan upgrades, and browse codes with clear numbers and fast navigation. BloxCalc is community-driven: tier lists, codes, and mechanics follow player and creator sources, so data accuracy depends on what you enter and how current those community references are. We are an independent site and not affiliated with Roblox Corporation or individual game publishers unless stated on a specific page.",
+    "contactHeading": "Contact",
+    "contactNote": "For general questions, feedback, or legal inquiries about this website, email us and we will do our best to respond when appropriate.",
+    "legalHeading": "Legal",
+    "linkPrivacy": "Privacy Policy",
+    "linkTerms": "Terms of Service",
     "homeLink": "Home"
+  },
+  "PrivacyPage": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "How BloxCalc handles data when you use our calculators, guides, and related pages.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: May 12, 2026",
+    "backToAbout": "Back to About",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "This Privacy Policy describes how BloxCalc (\"we\", \"us\") handles information in connection with this website and its features.",
+          "The site is intended as a general informational resource. It is not directed at children under 13 as a primary audience, but some Roblox-related content may interest younger users. If you are a parent or guardian and believe we have collected personal information from your child in a way that concerns you, contact us and we will work with you to address it."
+        ]
+      },
+      {
+        "title": "Information we may collect",
+        "paragraphs": [
+          "Like most websites, servers and hosting providers may automatically process technical information when you load pages — for example IP address, approximate region, browser type, device type, timestamps, and requested URLs. We may also collect diagnostic or security logs to keep the service reliable.",
+          "Many calculators run in your browser: values you type may stay on your device unless a feature explicitly sends data to us. Do not paste secrets, passwords, or highly sensitive personal data into any form on the site.",
+          "If you email us (for example at our support address shown on the About page), we receive the contents of your message and associated metadata (such as your email address) so we can respond."
+        ]
+      },
+      {
+        "title": "Cookies, analytics, and third parties",
+        "paragraphs": [
+          "We may use cookies or similar technologies for basic functionality, preferences (such as language), analytics, or advertising, depending on how the site is configured at a given time.",
+          "Third-party services (including analytics networks, advertising partners, content delivery networks, or embedded widgets) may collect information under their own policies. Where required, we aim to provide controls or notices consistent with applicable law."
+        ]
+      },
+      {
+        "title": "How we use information",
+        "paragraphs": [
+          "We use the categories of information above to operate and improve the site, measure performance, protect against abuse, comply with legal obligations, and communicate with you when you contact us."
+        ]
+      },
+      {
+        "title": "Retention, security, and your choices",
+        "paragraphs": [
+          "We retain information only as long as needed for the purposes described here, unless a longer period is required by law. No online service can guarantee perfect security, but we take reasonable steps to protect information we control.",
+          "Depending on where you live, you may have rights to access, correct, delete, or restrict certain processing of personal information, or to object to certain uses. You may also be able to use browser settings to block cookies. To exercise rights or ask questions, contact us using the email on the About page."
+        ]
+      },
+      {
+        "title": "International transfers and changes",
+        "paragraphs": [
+          "Visitors may access the site from many countries. Information may be processed in jurisdictions with different data-protection laws than your own.",
+          "We may update this policy from time to time. The \"Last updated\" date at the top will change when we do. Continued use of the site after changes means you accept the updated policy to the extent permitted by law."
+        ]
+      }
+    ]
+  },
+  "TermsPage": {
+    "metaTitle": "Terms of Service",
+    "metaDescription": "Rules for using BloxCalc calculators, guides, and related features.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: May 12, 2026",
+    "backToAbout": "Back to About",
+    "sections": [
+      {
+        "title": "Agreement",
+        "paragraphs": [
+          "These Terms of Service (\"Terms\") govern your access to and use of BloxCalc and its content (\"the Service\"). By using the Service, you agree to these Terms and to our Privacy Policy.",
+          "If you do not agree, do not use the Service. We may change these Terms; the updated date will appear at the top of this page. Material changes may be communicated in a reasonable way where appropriate."
+        ]
+      },
+      {
+        "title": "The Service",
+        "paragraphs": [
+          "BloxCalc provides informational tools and content related to Roblox games, including calculators, guides, and code listings where available.",
+          "Community values, codes, and game mechanics change frequently. Features may be updated, paused, or removed. We do not guarantee completeness, accuracy, or availability at any specific time."
+        ]
+      },
+      {
+        "title": "Not affiliated; no endorsement",
+        "paragraphs": [
+          "BloxCalc is not affiliated with Roblox Corporation. Game names and trademarks belong to their respective owners. References to a game do not imply sponsorship or endorsement.",
+          "Calculator outputs depend on numbers you supply and on third-party or community lists. We do not provide in-game items, currency, or trades."
+        ]
+      },
+      {
+        "title": "Disclaimer of warranties",
+        "paragraphs": [
+          "THE SERVICE IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY LAW."
+        ]
+      },
+      {
+        "title": "Limitation of liability",
+        "paragraphs": [
+          "TO THE MAXIMUM EXTENT PERMITTED BY LAW, BLOXCALC AND ITS OPERATORS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, OR FOR ANY LOSS OF PROFITS, GOODWILL, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE.",
+          "IN ANY CASE, OUR AGGREGATE LIABILITY ARISING OUT OF OR RELATING TO THE SERVICE WILL BE LIMITED TO THE GREATER OF (A) THE AMOUNT YOU PAID US FOR THE SERVICE IN THE TWELVE MONTHS BEFORE THE CLAIM (TYPICALLY ZERO FOR A FREE SITE) OR (B) FIFTY US DOLLARS (USD $50), UNLESS APPLICABLE LAW REQUIRES OTHERWISE."
+        ]
+      },
+      {
+        "title": "Acceptable use",
+        "paragraphs": [
+          "You agree not to misuse the Service — including attempting unauthorized access, disrupting servers, scraping in a way that harms performance, or using the Service to violate law or third-party rights.",
+          "We may suspend or terminate access if we reasonably believe you violated these Terms or created risk for us or others."
+        ]
+      },
+      {
+        "title": "General",
+        "paragraphs": [
+          "These Terms are governed by the laws applicable to the site operator's jurisdiction, without regard to conflict-of-law rules, except where prohibited by your local consumer protections.",
+          "If a provision is unenforceable, the remaining provisions remain in effect. Failure to enforce a provision is not a waiver.",
+          "Questions about these Terms? Contact us using the email listed on the About page."
+        ]
+      }
+    ]
   },
   "Breadcrumbs": {
     "home": "Home",
@@ -16,6 +173,112 @@
   "GameCalculator": {
     "metaTitleSuffix": "Calculator",
     "heading": "{game} calculator",
+    "lead": "Compare what you give versus what you get using totals from the same community value list you trust.",
     "placeholder": "Calculator UI goes here."
+  },
+  "AdoptMeCalculator": {
+    "metaDescription": "Adopt Me! trade fairness helper: enter your total value and their total value to see the gap before you confirm.",
+    "intro": "Paste totals from one trusted tier list for both sides. The tool only compares numbers you enter — it does not look up pets.",
+    "labelYours": "Total value you are trading away",
+    "labelTheirs": "Total value you are receiving",
+    "placeholderNumber": "e.g. 42",
+    "hint": "Use the same scale for both fields (for example both in “normal” units from the same sheet).",
+    "reset": "Clear inputs",
+    "gapLabel": "Absolute gap",
+    "verdictEqual": "These totals match — double-check ages, potions, and ride/fly before you accept.",
+    "verdictYouOver": "You are giving about {amount} more value on this scale — the trade favors them unless you meant to add sweeteners.",
+    "verdictTheyOver": "They are giving about {amount} more value on this scale — the trade favors you unless extras were agreed separately.",
+    "disclaimer": "Community values change daily and differ by list. This page is informational only and not affiliated with Uplift Games or Roblox."
+  },
+  "BloxFruitsCalculator": {
+    "metaDescription": "Blox Fruits trade fairness helper: compare your total fruit value against theirs before you lock a trade.",
+    "intro": "Enter combined values for fruits/accessories you each put in, using the same tier list for both columns.",
+    "labelYours": "Total value you are trading away",
+    "labelTheirs": "Total value you are receiving",
+    "placeholderNumber": "e.g. 120",
+    "hint": "If you mix physical fruits and stored value, keep the units consistent with the list you follow.",
+    "reset": "Clear inputs",
+    "gapLabel": "Absolute gap",
+    "verdictEqual": "Totals line up on paper — still verify awakenings, levels, and any bundled items in the trade window.",
+    "verdictYouOver": "You are offering roughly {amount} more on this scale — pause unless that overpay is intentional.",
+    "verdictTheyOver": "They are offering roughly {amount} more on this scale — confirm nothing important is missing from the window.",
+    "disclaimer": "Fruit demand shifts with patches. Numbers here are whatever you type; always confirm the final trade in-game. Not affiliated with Blox Fruits or Roblox."
+  },
+  "GameDetail": {
+    "latestCodesHeading": "Latest codes",
+    "noActiveCodes": "There are no codes listed right now. Check official social channels after major updates — we refresh this block when new codes drop.",
+    "clickToCopy": "Click to copy",
+    "copied": "Copied",
+    "quickNavHeading": "Quick navigation",
+    "quickNavDescription": "Jump to the calculator for this game.",
+    "faqHeading": "FAQ"
+  },
+  "MyKnifeFarm": {
+    "subNavAria": "My Knife Farm sections",
+    "navHub": "Guide & codes",
+    "navRoi": "Upgrade ROI",
+    "navZones": "Zones & crates",
+    "metaHubTitle": "My Knife Farm Codes & Calculator Guide",
+    "metaHubDescription": "My Knife Farm codes, a practical guide, and links to our My Knife Farm calculator tools for upgrades ROI and zone requirements.",
+    "hubH1": "My Knife Farm — codes, guide & calculator hub",
+    "guideHeading": "Comprehensive guide",
+    "hubQuickNavBody": "Open the upgrade ROI calculator for best paybacks, or the zones list for gates and knife rarity odds.",
+    "hubLinkRoi": "My Knife Farm upgrade ROI calculator (best upgrades, cash fast)",
+    "hubLinkZones": "My Knife Farm zones list (requirements & crate knife chances)",
+    "metaRoiTitle": "My Knife Farm Best Upgrades ROI Calculator",
+    "metaRoiDescription": "Rank My Knife Farm upgrades by payback time and $/s per dollar to find the best upgrades and get cash fast with data-driven buys.",
+    "breadcrumbRoi": "ROI calculator",
+    "roiH1": "My Knife Farm upgrade ROI calculator",
+    "roiLead": "Compare upgrade cost to added cash per second. Shorter payback usually means faster compounding — ideal for “best upgrades” and early cash rush routes.",
+    "roiBalanceLabel": "Your cash (optional)",
+    "roiBalancePlaceholder": "e.g. 50000",
+    "roiOnlyAffordable": "Hide upgrades above my cash",
+    "roiIntro": "Rows are sorted by payback (base price ÷ Δ cash/s). Efficiency is Δ cash/s per $1,000 spent (higher is better).",
+    "roiColUpgrade": "Upgrade",
+    "roiColCost": "Cost",
+    "roiColDelta": "Δ $/s",
+    "roiColPayback": "Payback",
+    "roiColEfficiency": "Efficiency ×1k",
+    "roiUnaffordable": "over budget",
+    "smartHeading": "Smart upgrade list",
+    "smartIntro": "ROI here is base price ÷ multiplier increase (lower is better — you pay less per +1 multiplier). The lowest-ROI upgrade is highlighted as Best value.",
+    "smartColUpgrade": "Upgrade",
+    "smartColBasePrice": "Base price",
+    "smartColMultIncrease": "Multiplier Δ",
+    "smartColRoi": "ROI (price ÷ mult Δ)",
+    "smartBestValue": "Best value",
+    "smartFootnote": "Multiplier Δ is the income multiplier gain modeled for this tier. Ties pick the first item in data order.",
+    "metaZonesTitle": "My Knife Farm Zone Requirements & Knife Rarity Chances",
+    "metaZonesDescription": "All My Knife Farm zone gates, notable drops, and illustrative crate knife odds for planning routes around zone requirements and rarity chances.",
+    "breadcrumbZones": "Zones list",
+    "zonesH1": "My Knife Farm zones — requirements, drops & crate odds",
+    "zonesLead": "Use this table to prep cash walls, key farming, and crate sessions. Percentages are planning examples — verify after each live patch.",
+    "zonesColZone": "Zone",
+    "zonesColCash": "Cash requirement",
+    "zonesColKeys": "Keys / unlock",
+    "zonesColDrops": "Notable drops",
+    "zonesColCrates": "Crate knife odds",
+    "dataDisclaimer": "Sample / community-style numbers for UX and SEO around My Knife Farm calculator, codes, zones, and knife rarity. Confirm everything in your current game build.",
+    "ttgHeading": "Time to goal (next zones)",
+    "ttgIntro": "Enter your current cash and cash per second. We use each zone’s cash gate from the data above to estimate how long until you can afford the next unlocks (keys/quests are not modeled).",
+    "ttgCurrentCash": "Current cash",
+    "ttgCashPerSecond": "Cash per second",
+    "ttgPlaceholderCash": "e.g. 40000",
+    "ttgPlaceholderCps": "e.g. 120",
+    "ttgNeedValidCash": "Enter a valid current cash amount (0 or greater) to see your next zone targets.",
+    "ttgNeedValidCps": "Enter a cash per second value greater than 0 to see estimated times.",
+    "ttgAllCashGatesMet": "You already meet every listed cash gate — only keys, quests, or other locks may remain.",
+    "ttgColZone": "Zone",
+    "ttgColCashGate": "Cash gate",
+    "ttgColRemaining": "Cash left",
+    "ttgColTime": "Time to cash gate",
+    "zonesSeoTableHeading": "My Knife Farm zone requirements (summary for search)",
+    "zonesSeoTableCaption": "Structured reference for My Knife Farm zone requirements, minimum cash gates, unlock conditions, notable drops, and illustrative crate knife rarity chances. Values mirror the primary table and numeric cashGoal field used by calculators.",
+    "zonesSeoColZone": "Zone",
+    "zonesSeoColMinCash": "Minimum cash (numeric)",
+    "zonesSeoColUnlock": "Keys / unlock",
+    "zonesSeoColDrops": "Notable drops",
+    "zonesSeoColCrates": "Crate knife odds",
+    "zonesSidebarAdsAria": "Advertisement sidebar"
   }
 }

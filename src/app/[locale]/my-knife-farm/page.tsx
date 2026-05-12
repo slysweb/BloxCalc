@@ -1,15 +1,14 @@
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { LatestCodes } from '@/components/game/LatestCodes';
-import { getGameJsonBySlug } from '@/config/games';
+import { myKnifeFarmSite } from '@/config/my-knife-farm';
 import { Link } from '@/i18n/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { notFound } from 'next/navigation';
 import { Fragment } from 'react';
 
-export { generateStaticParams } from '@/lib/game-static-params';
+export { generateStaticParams } from '@/i18n/generate-locale-static-params';
 
-type GameDetailPageProps = {
-  params: Promise<{ locale: string; 'game-slug': string }>;
+type PageProps = {
+  params: Promise<{ locale: string }>;
 };
 
 function buildFaqJsonLd(faq: { question: string; answer: string }[]) {
@@ -27,29 +26,29 @@ function buildFaqJsonLd(faq: { question: string; answer: string }[]) {
   };
 }
 
-export async function generateMetadata({ params }: GameDetailPageProps) {
-  const { 'game-slug': gameSlug } = await params;
-  const game = getGameJsonBySlug(gameSlug);
-  if (!game) {
-    return {};
-  }
+export async function generateMetadata({ params }: PageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'MyKnifeFarm' });
   return {
-    title: game.name,
-    description: game.description,
+    title: t('metaHubTitle'),
+    description: t('metaHubDescription'),
+    keywords: [
+      'My Knife Farm calculator',
+      'My Knife Farm codes',
+      'My Knife Farm guide',
+      'Roblox My Knife Farm',
+    ],
   };
 }
 
-export default async function GameDetailPage({ params }: GameDetailPageProps) {
-  const { locale, 'game-slug': gameSlug } = await params;
+export default async function MyKnifeFarmHubPage({ params }: PageProps) {
+  const { locale } = await params;
   setRequestLocale(locale);
 
-  const game = getGameJsonBySlug(gameSlug);
-  if (!game) {
-    notFound();
-  }
-
+  const game = myKnifeFarmSite;
   const t = await getTranslations('Breadcrumbs');
   const tDetail = await getTranslations('GameDetail');
+  const tM = await getTranslations('MyKnifeFarm');
   const faqLd = buildFaqJsonLd(game.faq);
 
   return (
@@ -64,18 +63,43 @@ export default async function GameDetailPage({ params }: GameDetailPageProps) {
       />
 
       <header className="space-y-3">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl">{game.name}</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl">{tM('hubH1')}</h1>
         <p className="max-w-3xl text-lg leading-relaxed text-slate-400">{game.description}</p>
       </header>
+
+      <section aria-labelledby="guide-heading" className="site-card space-y-6">
+        <h2 id="guide-heading" className="text-xl font-semibold text-slate-100">
+          {tM('guideHeading')}
+        </h2>
+        {game.guideSections.map((section) => (
+          <section key={section.heading} className="space-y-2">
+            <h3 className="text-lg font-semibold text-slate-200">{section.heading}</h3>
+            {section.paragraphs.map((p, i) => (
+              <p key={`${section.heading}-${i}`} className="max-w-3xl text-sm leading-relaxed text-slate-400">
+                {p}
+              </p>
+            ))}
+          </section>
+        ))}
+      </section>
 
       <section aria-labelledby="quick-nav-heading" className="site-card space-y-3">
         <h2 id="quick-nav-heading" className="text-lg font-semibold text-slate-100">
           {tDetail('quickNavHeading')}
         </h2>
-        <p className="text-sm text-slate-400">{tDetail('quickNavDescription')}</p>
-        <Link href={`/${game.slug}/calculator`} className="site-btn inline-flex w-fit">
-          {t('openCalculator')}
-        </Link>
+        <p className="text-sm text-slate-400">{tM('hubQuickNavBody')}</p>
+        <ul className="m-0 list-none space-y-2 p-0">
+          <li>
+            <Link href="/my-knife-farm/roi-calculator" className="site-link text-base font-medium">
+              {tM('hubLinkRoi')}
+            </Link>
+          </li>
+          <li>
+            <Link href="/my-knife-farm/zones-list" className="site-link text-base font-medium">
+              {tM('hubLinkZones')}
+            </Link>
+          </li>
+        </ul>
       </section>
 
       {game.faq.length > 0 ? (

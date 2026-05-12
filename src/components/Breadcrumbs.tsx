@@ -34,32 +34,33 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
   };
 
   return (
-    <nav aria-label="Breadcrumb">
+    <nav aria-label="Breadcrumb" className="mb-6">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ol
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '0.35rem',
-          listStyle: 'none',
-          margin: 0,
-          padding: 0,
-          fontSize: '0.875rem',
-        }}
-      >
+      <ol className="flex flex-wrap items-center gap-1.5 p-0 text-sm text-slate-400">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
           return (
-            <li key={`${item.label}-${index}`} style={{ display: 'flex', gap: '0.35rem' }}>
+            <li key={`${item.label}-${index}`} className="flex items-center gap-1.5">
               {item.href && !isLast ? (
-                <Link href={item.href}>{item.label}</Link>
+                <Link href={item.href} className="site-link font-medium text-slate-300">
+                  {item.label}
+                </Link>
               ) : (
-                <span aria-current={isLast ? 'page' : undefined}>{item.label}</span>
+                <span
+                  className={isLast ? 'font-medium text-slate-200' : undefined}
+                  aria-current={isLast ? 'page' : undefined}
+                >
+                  {item.label}
+                </span>
               )}
-              {!isLast ? <span aria-hidden="true">/</span> : null}
+              {!isLast ? (
+                <span className="text-slate-600" aria-hidden="true">
+                  /
+                </span>
+              ) : null}
             </li>
           );
         })}

@@ -1,0 +1,24 @@
+{
+  "slug": "adopt-me",
+  "name": "Adopt Me!",
+  "description": "Community-style trade checks, redemption help, and a simple value gap calculator for Adopt Me! trades.",
+  "codes": [],
+  "faq": [
+    {
+      "question": "How do I redeem Adopt Me codes?",
+      "answer": "Join Adopt Me, travel to Adoption Island, enter the courthouse with the golden scales, and use the Code Redemption kiosk (interact, enter the code, confirm). New codes are released sparingly — follow official Uplift Games channels for announcements."
+    },
+    {
+      "question": "Why is the codes list empty?",
+      "answer": "Adopt Me often has long stretches with no active public codes. We keep this section so you can copy quickly when developers drop new ones. Always verify in-game after each update."
+    },
+    {
+      "question": "How does the trade calculator work?",
+      "answer": "Enter the total value you are trading away and the total value you are receiving (from the same community tier list you trust). The tool shows the gap and whether the trade is balanced or favors one side — it does not price individual pets for you."
+    },
+    {
+      "question": "Does this site replace in-game trading safety?",
+      "answer": "No. Use official trade windows only, double-check pet ages and potions, and never follow off-platform trade instructions. This site is informational only."
+    }
+  ]
+}
