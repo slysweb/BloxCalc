@@ -50,7 +50,7 @@ export function buildOgAndCanonical(options: {
       description: options.description,
       images: [
         {
-          url: '/icon.png',
+          url: '/og-image.png',
           width: 512,
           height: 512,
           alt: 'BloxCalc',
@@ -61,7 +61,7 @@ export function buildOgAndCanonical(options: {
       card: 'summary_large_image',
       title: resolvedTitle,
       description: options.description,
-      images: ['/icon.png'],
+      images: ['/og-image.png'],
     },
   };
 }
