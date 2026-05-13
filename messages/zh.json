@@ -41,7 +41,17 @@
     ],
     "calculator": "计算器",
     "codes": "兑换码",
-    "noResults": "没有匹配的游戏，请尝试其他名称或关键词。"
+    "noResults": "没有匹配的游戏，请尝试其他名称或关键词。",
+    "metaTitle": "Roblox 免费计算器、兑换码与交易工具",
+    "metaDescription": "收录 Blox Fruits、Adopt Me!、Slime RNG、My Knife Farm 等：兑换码、交易总价对比、升级 ROI、区域门槛等独立工具，数字清晰、打开即用。",
+    "metaKeywords": [
+      "Roblox 计算器",
+      "Blox Fruits 兑换码",
+      "Adopt Me 交易",
+      "My Knife Farm ROI",
+      "Slime RNG",
+      "BloxCalc"
+    ]
   },
   "AboutPage": {
     "metaTitle": "关于",
@@ -205,6 +215,7 @@
     "disclaimer": "版本补丁会改变果实热度；数字完全取决于你的输入。请以游戏内最终交易为准。与 Blox Fruits 或 Roblox 无关联。"
   },
   "GameDetail": {
+    "metaTitle": "{game}：兑换码、交易计算器与攻略",
     "latestCodesHeading": "最新兑换码",
     "noActiveCodes": "当前没有收录可用兑换码。大型更新后请关注官方社交渠道——有新码时我们会更新此区域。",
     "clickToCopy": "点击复制",

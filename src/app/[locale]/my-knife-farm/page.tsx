@@ -2,6 +2,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { LatestCodes } from '@/components/game/LatestCodes';
 import { myKnifeFarmSite } from '@/config/my-knife-farm';
 import { Link } from '@/i18n/navigation';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Fragment } from 'react';
 
@@ -29,15 +30,23 @@ function buildFaqJsonLd(faq: { question: string; answer: string }[]) {
 export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'MyKnifeFarm' });
+  const titleSegment = t('metaHubTitle');
+  const description = t('metaHubDescription');
   return {
-    title: t('metaHubTitle'),
-    description: t('metaHubDescription'),
+    title: titleSegment,
+    description,
     keywords: [
       'My Knife Farm calculator',
       'My Knife Farm codes',
       'My Knife Farm guide',
       'Roblox My Knife Farm',
     ],
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: ['my-knife-farm'],
+      titleSegment,
+      description,
+    }),
   };
 }
 

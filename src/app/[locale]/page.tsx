@@ -2,6 +2,7 @@ import { HomePageClient } from '@/components/home/HomePageClient';
 import type { HomeRecentUpdate } from '@/components/home/HomePageClient';
 import { buildTrendingHubs } from '@/config/home/trending-hubs';
 import { gamesList } from '@/config/games/registry';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 export { generateStaticParams } from '@/i18n/generate-locale-static-params';
@@ -13,6 +14,27 @@ type HomePageProps = {
 type HomePageMessages = {
   recentUpdatesItems?: HomeRecentUpdate[];
 };
+
+export async function generateMetadata({ params }: HomePageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'HomePage' });
+  const messages = await getMessages();
+  const home = messages.HomePage as { metaKeywords?: string[] } | undefined;
+  const titleSegment = t('metaTitle');
+  const description = t('metaDescription');
+  return {
+    title: titleSegment,
+    description,
+    ...(home?.metaKeywords?.length ? { keywords: home.metaKeywords } : {}),
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: [],
+      titleSegment,
+      description,
+    }),
+  };
+}
 
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;

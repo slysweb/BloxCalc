@@ -3,6 +3,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { TimeToGoalCalculator } from '@/components/my-knife-farm/TimeToGoalCalculator';
 import { ZonesSeoSummaryTable } from '@/components/my-knife-farm/ZonesSeoSummaryTable';
 import { MY_KNIFE_FARM_ZONES, myKnifeFarmSite } from '@/config/my-knife-farm';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export { generateStaticParams } from '@/i18n/generate-locale-static-params';
@@ -14,15 +15,23 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'MyKnifeFarm' });
+  const titleSegment = t('metaZonesTitle');
+  const description = t('metaZonesDescription');
   return {
-    title: t('metaZonesTitle'),
-    description: t('metaZonesDescription'),
+    title: titleSegment,
+    description,
     keywords: [
       'My Knife Farm zone requirements',
       'My Knife Farm knife rarity chances',
       'My Knife Farm crate odds',
       'My Knife Farm zones list',
     ],
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: ['my-knife-farm', 'zones-list'],
+      titleSegment,
+      description,
+    }),
   };
 }
 

@@ -2,6 +2,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { SmartUpgradeList } from '@/components/my-knife-farm/SmartUpgradeList';
 import { UpgradeRoiCalculator } from '@/components/my-knife-farm/UpgradeRoiCalculator';
 import { myKnifeFarmSite } from '@/config/my-knife-farm';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export { generateStaticParams } from '@/i18n/generate-locale-static-params';
@@ -13,15 +14,23 @@ type PageProps = {
 export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'MyKnifeFarm' });
+  const titleSegment = t('metaRoiTitle');
+  const description = t('metaRoiDescription');
   return {
-    title: t('metaRoiTitle'),
-    description: t('metaRoiDescription'),
+    title: titleSegment,
+    description,
     keywords: [
       'My Knife Farm best upgrades',
       'how to get cash fast My Knife Farm',
       'My Knife Farm ROI',
       'My Knife Farm upgrade calculator',
     ],
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: ['my-knife-farm', 'roi-calculator'],
+      titleSegment,
+      description,
+    }),
   };
 }
 

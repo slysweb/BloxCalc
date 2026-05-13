@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/navigation';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export { generateStaticParams } from '@/i18n/generate-locale-static-params';
@@ -12,9 +13,17 @@ type AboutPageProps = {
 export async function generateMetadata({ params }: AboutPageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'AboutPage' });
+  const titleSegment = t('metaTitle');
+  const description = t('metaDescription');
   return {
-    title: t('metaTitle'),
-    description: t('metaDescription'),
+    title: titleSegment,
+    description,
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: ['about'],
+      titleSegment,
+      description,
+    }),
   };
 }
 

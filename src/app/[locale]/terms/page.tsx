@@ -1,5 +1,6 @@
 import { LegalPageShell, LegalSection } from '@/components/legal/LegalPageShell';
 import { Link } from '@/i18n/navigation';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
 export { generateStaticParams } from '@/i18n/generate-locale-static-params';
@@ -25,9 +26,17 @@ type TermsMessages = {
 export async function generateMetadata({ params }: TermsPageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'TermsPage' });
+  const titleSegment = t('metaTitle');
+  const description = t('metaDescription');
   return {
-    title: t('metaTitle'),
-    description: t('metaDescription'),
+    title: titleSegment,
+    description,
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: ['terms'],
+      titleSegment,
+      description,
+    }),
   };
 }
 

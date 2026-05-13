@@ -41,11 +41,21 @@
     ],
     "calculator": "Calculator",
     "codes": "Codes",
-    "noResults": "No games match your search. Try another name or keyword."
+    "noResults": "No games match your search. Try another name or keyword.",
+    "metaTitle": "Roblox calculators, codes & fair trade tools",
+    "metaDescription": "Roblox calculators and codes for Blox Fruits, Adopt Me!, Slime RNG & My Knife Farm. Fair trade totals, upgrade ROI, zone gates—fast independent tools.",
+    "metaKeywords": [
+      "Roblox calculator",
+      "Blox Fruits codes",
+      "Adopt Me trade calculator",
+      "My Knife Farm ROI",
+      "Slime RNG",
+      "BloxCalc"
+    ]
   },
   "AboutPage": {
     "metaTitle": "About",
-    "metaDescription": "Independent tools for Roblox trades and upgrades—community-driven tier and code references with clear expectations on data accuracy. Contact, privacy policy, and terms.",
+    "metaDescription": "Independent Roblox tools: community codes & tier lists for trades/upgrades; accuracy depends on inputs & sources. Contact, privacy & terms on About.",
     "title": "About BloxCalc",
     "subtitle": "Calculators and guides for Roblox players",
     "intro": "Independent tools for Roblox players—compare trades, plan upgrades, and browse codes with clear numbers and fast navigation. BloxCalc is community-driven: tier lists, codes, and mechanics follow player and creator sources, so data accuracy depends on what you enter and how current those community references are. We are an independent site and not affiliated with Roblox Corporation or individual game publishers unless stated on a specific page.",
@@ -205,6 +215,7 @@
     "disclaimer": "Fruit demand shifts with patches. Numbers here are whatever you type; always confirm the final trade in-game. Not affiliated with Blox Fruits or Roblox."
   },
   "GameDetail": {
+    "metaTitle": "{game} codes, calculator & hub guides",
     "latestCodesHeading": "Latest codes",
     "noActiveCodes": "There are no codes listed right now. Check official social channels after major updates — we refresh this block when new codes drop.",
     "clickToCopy": "Click to copy",

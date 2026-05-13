@@ -41,7 +41,17 @@
     ],
     "calculator": "計算ツール",
     "codes": "コード",
-    "noResults": "一致するゲームがありません。別の名前やキーワードを試してください。"
+    "noResults": "一致するゲームがありません。別の名前やキーワードを試してください。",
+    "metaTitle": "Roblox向け無料計算・最新コード・トレード補助",
+    "metaDescription": "Blox Fruits、Adopt Me!、Slime RNG、My Knife Farm など向けに、コード掲載・トレード合計比較・強化 ROI・ゾーン条件などをまとめた独立サイト。入力は素早く、結果は読みやすく。",
+    "metaKeywords": [
+      "Roblox 計算ツール",
+      "Blox Fruits コード",
+      "Adopt Me トレード",
+      "My Knife Farm ROI",
+      "Slime RNG",
+      "BloxCalc"
+    ]
   },
   "AboutPage": {
     "metaTitle": "概要",
@@ -205,6 +215,7 @@
     "disclaimer": "パッチで需要は変わります。数値は入力次第です。最終確認はゲーム内で。Blox Fruits / Roblox 非公式です。"
   },
   "GameDetail": {
+    "metaTitle": "{game}｜最新コードと交換計算ツール",
     "latestCodesHeading": "最新コード",
     "noActiveCodes": "現在、掲載中のコードはありません。大型アップデート後は公式SNSも確認してください。新コードが出たらここを更新します。",
     "clickToCopy": "クリックでコピー",

@@ -3,11 +3,22 @@ import { SiteNavbar } from '@/components/layout/SiteNavbar';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { Lexend } from 'next/font/google';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { metadataTitleTemplate } from '@/lib/seo-metadata';
+import { getSiteOrigin } from '@/lib/site-url';
 import '../globals.css';
 
 export { generateStaticParams } from '@/i18n/generate-locale-static-params';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(getSiteOrigin()),
+  title: {
+    default: 'BloxCalc',
+    template: metadataTitleTemplate,
+  },
+};
 
 const lexend = Lexend({
   subsets: ['latin'],

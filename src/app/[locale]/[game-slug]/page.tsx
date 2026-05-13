@@ -2,6 +2,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { LatestCodes } from '@/components/game/LatestCodes';
 import { getGameJsonBySlug } from '@/config/games';
 import { Link } from '@/i18n/navigation';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Fragment } from 'react';
@@ -28,14 +29,22 @@ function buildFaqJsonLd(faq: { question: string; answer: string }[]) {
 }
 
 export async function generateMetadata({ params }: GameDetailPageProps) {
-  const { 'game-slug': gameSlug } = await params;
+  const { locale, 'game-slug': gameSlug } = await params;
   const game = getGameJsonBySlug(gameSlug);
   if (!game) {
     return {};
   }
+  const t = await getTranslations({ locale, namespace: 'GameDetail' });
+  const titleSegment = t('metaTitle', { game: game.name });
   return {
-    title: game.name,
+    title: titleSegment,
     description: game.description,
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: [gameSlug],
+      titleSegment,
+      description: game.description,
+    }),
   };
 }
 

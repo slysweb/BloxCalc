@@ -1,6 +1,7 @@
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { TradeTotalsFairnessCalculator } from '@/components/game/TradeTotalsFairnessCalculator';
 import { getGameBySlug } from '@/lib/games';
+import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
@@ -30,9 +31,17 @@ export async function generateMetadata({ params }: GameCalculatorPageProps) {
     ns != null
       ? await getTranslations({ locale, namespace: ns })
       : null;
+  const description = tMeta?.('metaDescription') ?? game.description;
+  const titleSegment = `${game.name} — ${t('metaTitleSuffix')}`;
   return {
-    title: `${game.name} — ${t('metaTitleSuffix')}`,
-    description: tMeta?.('metaDescription') ?? game.description,
+    title: titleSegment,
+    description,
+    ...buildOgAndCanonical({
+      locale,
+      pathSegments: [gameSlug, 'calculator'],
+      titleSegment,
+      description,
+    }),
   };
 }
 

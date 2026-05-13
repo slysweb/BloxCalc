@@ -41,7 +41,17 @@
     ],
     "calculator": "Calculadora",
     "codes": "Códigos",
-    "noResults": "Nenhum jogo corresponde à busca. Tente outro nome ou palavra-chave."
+    "noResults": "Nenhum jogo corresponde à busca. Tente outro nome ou palavra-chave.",
+    "metaTitle": "Calculadoras, códigos e trocas justas no Roblox",
+    "metaDescription": "Calculadoras e códigos para Blox Fruits, Adopt Me!, Slime RNG e My Knife Farm: totais de troca, ROI de upgrades e requisitos de zonas — ferramentas independentes e rápidas.",
+    "metaKeywords": [
+      "calculadora Roblox",
+      "códigos Blox Fruits",
+      "Adopt Me troca",
+      "My Knife Farm ROI",
+      "Slime RNG",
+      "BloxCalc"
+    ]
   },
   "AboutPage": {
     "metaTitle": "Sobre",
@@ -205,6 +215,7 @@
     "disclaimer": "A demanda muda a cada patch. Os números são os que você digita; confirme a troca final no jogo. Não afiliado a Blox Fruits ou Roblox."
   },
   "GameDetail": {
+    "metaTitle": "{game}: códigos, calculadora e guia rápido",
     "latestCodesHeading": "Códigos mais recentes",
     "noActiveCodes": "Não há códigos listados agora. Acompanhe os canais oficiais após grandes atualizações — atualizamos este bloco quando surgirem novos códigos.",
     "clickToCopy": "Clique para copiar",
