@@ -35,7 +35,8 @@ export async function generateMetadata({ params }: GameDetailPageProps) {
     return {};
   }
   const t = await getTranslations({ locale, namespace: 'GameDetail' });
-  const titleSegment = t('metaTitle', { game: game.name });
+  const titleSegment =
+    game.seo?.hub?.title ?? t('metaTitle', { game: game.name });
   return {
     title: titleSegment,
     description: game.description,
@@ -73,7 +74,9 @@ export default async function GameDetailPage({ params }: GameDetailPageProps) {
       />
 
       <header className="space-y-3">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl">{game.name}</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-slate-100 sm:text-4xl">
+          {game.seo?.hub?.h1 ?? game.name}
+        </h1>
         <p className="max-w-3xl text-lg leading-relaxed text-slate-400">{game.description}</p>
       </header>
 

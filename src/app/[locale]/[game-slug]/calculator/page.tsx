@@ -32,8 +32,13 @@ export async function generateMetadata({ params }: GameCalculatorPageProps) {
     ns != null
       ? await getTranslations({ locale, namespace: ns })
       : null;
-  const description = tMeta?.('metaDescription') ?? game.description;
-  const titleSegment = `${game.name} — ${t('metaTitleSuffix')}`;
+  const calcSeo = game.seo?.calculator;
+  const description =
+    tMeta?.('metaDescription') ??
+    calcSeo?.metaDescription ??
+    game.description;
+  const titleSegment =
+    calcSeo?.metaTitle ?? `${game.name} — ${t('metaTitleSuffix')}`;
   return {
     title: titleSegment,
     description,
@@ -60,6 +65,13 @@ export default async function GameCalculatorPage({
   const t = await getTranslations('Breadcrumbs');
   const tCalc = await getTranslations('GameCalculator');
   const tradeNs = tradeCalcNamespace(game.slug);
+  const calcSeo = game.seo?.calculator;
+  const heading =
+    tradeNs != null
+      ? tCalc('heading', { game: game.name })
+      : (calcSeo?.h1 ?? tCalc('heading', { game: game.name }));
+  const lead =
+    tradeNs != null ? tCalc('lead') : (calcSeo?.lead ?? tCalc('lead'));
 
   return (
     <main className="mx-auto w-full max-w-5xl flex-1 space-y-6 px-4 py-10 lg:max-w-6xl">
@@ -72,9 +84,9 @@ export default async function GameCalculatorPage({
       />
       <header className="space-y-2">
         <h1 className="text-3xl font-bold tracking-tight text-slate-100">
-          {tCalc('heading', { game: game.name })}
+          {heading}
         </h1>
-        <p className="max-w-3xl text-slate-400">{tCalc('lead')}</p>
+        <p className="max-w-3xl text-slate-400">{lead}</p>
       </header>
 
       {tradeNs ? (

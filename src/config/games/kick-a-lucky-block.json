@@ -1,0 +1,63 @@
+{
+  "slug": "kick-a-lucky-block",
+  "name": "Kick a Lucky Block",
+  "description": "Check how much power you need for every zone in Kick a Lucky Block! Use our free calculator to predict your kick distance and find the best weights to buy. Updated for 2026.",
+  "codes": [],
+  "faq": [
+    {
+      "question": "What is Kick a Lucky Block?",
+      "answer": "It is a Roblox experience by No More Flops where you kick lucky blocks, roll “brainrot” style rewards, survive a triggered tsunami, place pickups on your plot for cash, and train your legs with weights to kick farther. Official experience: https://www.roblox.com/games/89469502395769/Kick-a-Lucky-Block — community-written overview: https://roblox.fandom.com/wiki/No_More_Flops/Kick_a_Lucky_Block"
+    },
+    {
+      "question": "How should I use this hub and calculator?",
+      "answer": "Start from the hub for codes (when we can verify them) and the zone-oriented guides. Open the calculator route for kick-distance and power planning tools as we ship the interactive UI — numbers always depend on what you type and the latest patch."
+    },
+    {
+      "question": "Do you work with No More Flops or Roblox?",
+      "answer": "No. BloxCalc is an independent fan site. Always confirm rewards, prices, and zone gates inside the live game after patches."
+    },
+    {
+      "question": "Why is the codes list empty?",
+      "answer": "We only publish codes we can verify from primary sources. After major updates, check the developer’s official Discord or X, then refresh this hub."
+    },
+    {
+      "question": "Will I get banned for using this site?",
+      "answer": "Reading guides and doing your own math offline does not touch Roblox. Never use exploits; the game advertises anti-exploit enforcement."
+    }
+  ],
+  "guideSections": [
+    {
+      "heading": "Zones, power, and progression",
+      "paragraphs": [
+        "New zones usually gate on leg power or similar stats so you cannot brute-force skips without training. Write down the requirement shown at each door before you grind, then compare it to your current power after each weight purchase.",
+        "When a patch renumbers gates, community spreadsheets disagree until someone re-screenshots every entrance. Prefer the in-game UI over second-hand lists."
+      ]
+    },
+    {
+      "heading": "Kick distance, weights, and lucky blocks",
+      "paragraphs": [
+        "Weights exist to push your kick range up so lucky blocks and hazards are easier to reach. Treat every purchase as ROI: cost versus meters gained per kick, not just the highest tier in the shop.",
+        "Kicking lucky blocks triggers chaos (for example tsunami waves in the live experience). Plan stamina and positioning before you chain kicks for rewards."
+      ]
+    },
+    {
+      "heading": "Plot money and brainrot placements",
+      "paragraphs": [
+        "Placing rolled brainrot on your plot earns passive money in the loop described by the developers. Re-check which slots pay best after economy tuning patches.",
+        "If two items look identical, open their detail panels — multipliers and rarity tags differ more often than the icon art suggests."
+      ]
+    }
+  ],
+  "seo": {
+    "hub": {
+      "title": "Kick a Lucky Block Calculator & Zone Guide - Power Requirements",
+      "h1": "Kick a Lucky Block Distance & Power Tools"
+    },
+    "calculator": {
+      "metaTitle": "Kick a Lucky Block Calculator — Kick Distance, Zones & Power",
+      "metaDescription": "Check how much power you need for every zone in Kick a Lucky Block! Use our free calculator to predict your kick distance and find the best weights to buy. Updated for 2026.",
+      "h1": "Kick a Lucky Block kick distance & zone power calculator",
+      "lead": "Plug in your leg power, planned weight buys, and zone gate numbers to preview kick reach and farming routes. Interactive fields are shipping next — until then, use the hub guide and your in-game stats as the source of truth."
+    }
+  }
+}

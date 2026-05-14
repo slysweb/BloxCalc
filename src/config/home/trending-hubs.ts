@@ -16,6 +16,7 @@ const ICON_BY_SLUG: Record<string, string> = {
   'blox-fruits': '🍈',
   'adopt-me': '🐾',
   'slime-rng': '🧪',
+  'kick-a-lucky-block': '🍀',
 };
 
 /**
