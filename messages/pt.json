@@ -24,7 +24,7 @@
     "recentUpdatesItems": [
       {
         "date": "2026-05-14",
-        "text": "Kick a Lucky Block: hub novo, calculadora de distância do chute (portões de zona e eficiência de pesos) e rota de lista de zonas — card em alta; substitua tabelas placeholder por dados verificados no jogo quando tiver."
+        "text": "Kick a Lucky Block: hub novo com ferramentas para estimar distância do chute, checar portões de zona por poder, comparar compras de pesos e uma página de lista de zonas para planejar seu percurso."
       },
       {
         "date": "2026-05-12",
@@ -37,6 +37,10 @@
       {
         "date": "2026-05-10",
         "text": "My Knife Farm: textos e padrões da calculadora de ROI ajustados para leitura de payback mais clara."
+      },
+      {
+        "date": "2026-05-08",
+        "text": "Adopt Me: página da calculadora de trocas alinhada às orientações do hub atual."
       }
     ],
     "calculator": "Calculadora",

@@ -24,7 +24,7 @@
     "recentUpdatesItems": [
       {
         "date": "2026-05-14",
-        "text": "Kick a Lucky Block: new hub, kick-distance calculator (zone gates & weight efficiency), and a zones list route—trending card added; replace placeholder tables with verified in-game numbers when you have them."
+        "text": "Kick a Lucky Block: new hub with tools to estimate kick distance, check zone power gates, compare weight buys, and a zones list page to plan your route."
       },
       {
         "date": "2026-05-12",
@@ -37,6 +37,10 @@
       {
         "date": "2026-05-10",
         "text": "My Knife Farm: ROI calculator labels and default hints updated for clearer break-even reads."
+      },
+      {
+        "date": "2026-05-08",
+        "text": "Adopt Me: trade calculator page reviewed so totals guidance matches the current hub layout."
       }
     ],
     "calculator": "Calculator",
