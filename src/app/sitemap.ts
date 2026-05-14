@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { getGameSlugs } from '@/lib/games';
+import { gameHasZonesListPage } from '@/lib/game-subpages';
 import { getSiteOrigin } from '@/lib/site-url';
 
 /** 与 `output: 'export'` 兼容：构建期生成 sitemap。 */
@@ -40,6 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${base}${prefix}/${slug}/calculator`,
         lastModified,
       });
+      if (gameHasZonesListPage(slug)) {
+        entries.push({
+          url: `${base}${prefix}/${slug}/zones`,
+          lastModified,
+        });
+      }
     }
   }
 

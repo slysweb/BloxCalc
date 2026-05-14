@@ -2,6 +2,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { LatestCodes } from '@/components/game/LatestCodes';
 import { getGameJsonBySlug } from '@/config/games';
 import { Link } from '@/i18n/navigation';
+import { gameHasZonesListPage } from '@/lib/game-subpages';
 import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -60,6 +61,9 @@ export default async function GameDetailPage({ params }: GameDetailPageProps) {
 
   const t = await getTranslations('Breadcrumbs');
   const tDetail = await getTranslations('GameDetail');
+  const tKalbZones = gameHasZonesListPage(game.slug)
+    ? await getTranslations({ locale, namespace: 'KickALuckyBlockZones' })
+    : null;
   const faqLd = buildFaqJsonLd(game.faq);
 
   return (
@@ -107,6 +111,14 @@ export default async function GameDetailPage({ params }: GameDetailPageProps) {
           <Link href={`/${game.slug}/calculator`} className="site-btn inline-flex w-fit">
             {t('openCalculator')}
           </Link>
+          {tKalbZones != null ? (
+            <Link
+              href={`/${game.slug}/zones`}
+              className="inline-flex w-fit items-center justify-center rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-2 text-sm font-semibold text-slate-100 transition-colors hover:border-emerald-500/40 hover:text-emerald-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+            >
+              {tKalbZones('openZonesList')}
+            </Link>
+          ) : null}
           {game.faq.length > 0 ? (
             <a
               href="#faq-heading"

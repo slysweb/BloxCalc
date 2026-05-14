@@ -1,5 +1,6 @@
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { TradeTotalsFairnessCalculator } from '@/components/game/TradeTotalsFairnessCalculator';
+import { KickALuckyBlockCalculator } from '@/components/kick-a-lucky-block/KickALuckyBlockCalculator';
 import { getGameBySlug } from '@/lib/games';
 import { buildOgAndCanonical } from '@/lib/seo-metadata';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -91,6 +92,8 @@ export default async function GameCalculatorPage({
 
       {tradeNs ? (
         <TradeTotalsFairnessCalculator namespace={tradeNs} />
+      ) : game.slug === 'kick-a-lucky-block' ? (
+        <KickALuckyBlockCalculator gameSlug={game.slug} />
       ) : (
         <div className="site-card space-y-3">
           <p className="text-slate-400">{tCalc('placeholder')}</p>

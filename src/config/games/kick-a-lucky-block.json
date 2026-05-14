@@ -10,7 +10,7 @@
     },
     {
       "question": "How should I use this hub and calculator?",
-      "answer": "Start from the hub for codes (when we can verify them) and the zone-oriented guides. Open the calculator route for kick-distance and power planning tools as we ship the interactive UI — numbers always depend on what you type and the latest patch."
+      "answer": "Start from the hub for codes (when we can verify them) and the zone-oriented guides. Use Quick navigation to open the kick-distance calculator or the static zones list. Numbers always depend on what you type and the latest patch — replace placeholder tables in the repo when you have verified screenshots."
     },
     {
       "question": "Do you work with No More Flops or Roblox?",
@@ -57,7 +57,7 @@
       "metaTitle": "Kick a Lucky Block Calculator — Kick Distance, Zones & Power",
       "metaDescription": "Check how much power you need for every zone in Kick a Lucky Block! Use our free calculator to predict your kick distance and find the best weights to buy. Updated for 2026.",
       "h1": "Kick a Lucky Block kick distance & zone power calculator",
-      "lead": "Plug in your leg power, planned weight buys, and zone gate numbers to preview kick reach and farming routes. Interactive fields are shipping next — until then, use the hub guide and your in-game stats as the source of truth."
+      "lead": "Enter your current leg power and tune the distance multiplier to preview kick reach, compare fictional zone gates, and sort demo weight prices by efficiency — replace the dataset in code when you have verified in-game numbers."
     }
   }
 }
