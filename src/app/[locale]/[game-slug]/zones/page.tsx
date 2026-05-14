@@ -71,13 +71,10 @@ export default async function GameZonesPage({ params }: ZonesPageProps) {
         <p className="max-w-3xl text-lg leading-relaxed text-slate-400">{tZ('zonesLead')}</p>
       </header>
 
-      <aside
-        className="space-y-2 rounded-lg border border-amber-500/35 bg-amber-950/25 p-4 text-sm leading-relaxed text-amber-100/90"
-        role="note"
-      >
-        <p className="m-0 font-semibold text-amber-50">{tZ('dataPlaceholderTitle')}</p>
-        <p className="m-0 text-amber-100/88">{tZ('dataPlaceholderBody')}</p>
-      </aside>
+      {/*
+        占位横幅（dataPlaceholderTitle / dataPlaceholderBody）已隐藏；
+        数据维护说明见 src/config/kick-a-lucky-block/placeholder-data.ts
+      */}
 
       <div className="site-card space-y-4">
         <div className="flex flex-wrap gap-3">

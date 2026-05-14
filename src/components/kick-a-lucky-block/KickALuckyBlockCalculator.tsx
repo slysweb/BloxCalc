@@ -54,13 +54,10 @@ export function KickALuckyBlockCalculator({ gameSlug }: KickALuckyBlockCalculato
 
   return (
     <div className="space-y-8">
-      <aside
-        className="space-y-2 rounded-lg border border-amber-500/35 bg-amber-950/25 p-4 text-sm leading-relaxed text-amber-100/90"
-        role="note"
-      >
-        <p className="m-0 font-semibold text-amber-50">{t('placeholderBannerTitle')}</p>
-        <p className="m-0 text-amber-100/88">{t('placeholderBannerBody')}</p>
-      </aside>
+      {/*
+        占位说明（曾用 placeholderBannerTitle / placeholderBannerBody）已按产品要求从页面隐藏；
+        维护说明见 src/config/kick-a-lucky-block/placeholder-data.ts 文件头注释。
+      */}
 
       <section className="site-card space-y-4" aria-labelledby="kalb-inputs-heading">
         <h2 id="kalb-inputs-heading" className="text-lg font-semibold text-slate-100">
