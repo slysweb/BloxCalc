@@ -13,9 +13,10 @@ type GameCalculatorPageProps = {
 
 function tradeCalcNamespace(
   slug: string,
-): 'AdoptMeCalculator' | 'BloxFruitsCalculator' | null {
+): 'AdoptMeCalculator' | 'BloxFruitsCalculator' | 'SlimeRngCalculator' | null {
   if (slug === 'adopt-me') return 'AdoptMeCalculator';
   if (slug === 'blox-fruits') return 'BloxFruitsCalculator';
+  if (slug === 'slime-rng') return 'SlimeRngCalculator';
   return null;
 }
 

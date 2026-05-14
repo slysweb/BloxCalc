@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useCallback, useMemo, useState } from 'react';
 
 type TradeTotalsFairnessCalculatorProps = {
-  namespace: 'AdoptMeCalculator' | 'BloxFruitsCalculator';
+  namespace: 'AdoptMeCalculator' | 'BloxFruitsCalculator' | 'SlimeRngCalculator';
 };
 
 function parseValue(raw: string): number | null {

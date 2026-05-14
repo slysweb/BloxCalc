@@ -77,14 +77,42 @@ export default async function GameDetailPage({ params }: GameDetailPageProps) {
         <p className="max-w-3xl text-lg leading-relaxed text-slate-400">{game.description}</p>
       </header>
 
+      {game.guideSections && game.guideSections.length > 0 ? (
+        <section aria-labelledby="guide-heading" className="site-card space-y-6">
+          <h2 id="guide-heading" className="text-xl font-semibold text-slate-100">
+            {tDetail('guideHeading')}
+          </h2>
+          {game.guideSections.map((section) => (
+            <section key={section.heading} className="space-y-2">
+              <h3 className="text-lg font-semibold text-slate-200">{section.heading}</h3>
+              {section.paragraphs.map((p, i) => (
+                <p key={`${section.heading}-${i}`} className="max-w-3xl text-sm leading-relaxed text-slate-400">
+                  {p}
+                </p>
+              ))}
+            </section>
+          ))}
+        </section>
+      ) : null}
+
       <section aria-labelledby="quick-nav-heading" className="site-card space-y-3">
         <h2 id="quick-nav-heading" className="text-lg font-semibold text-slate-100">
           {tDetail('quickNavHeading')}
         </h2>
         <p className="text-sm text-slate-400">{tDetail('quickNavDescription')}</p>
-        <Link href={`/${game.slug}/calculator`} className="site-btn inline-flex w-fit">
-          {t('openCalculator')}
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <Link href={`/${game.slug}/calculator`} className="site-btn inline-flex w-fit">
+            {t('openCalculator')}
+          </Link>
+          {game.faq.length > 0 ? (
+            <a
+              href="#faq-heading"
+              className="inline-flex w-fit items-center justify-center rounded-lg border border-slate-600 bg-slate-900/60 px-4 py-2 text-sm font-semibold text-slate-100 transition-colors hover:border-emerald-500/40 hover:text-emerald-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+            >
+              {tDetail('jumpToFaq')}
+            </a>
+          ) : null}
+        </div>
       </section>
 
       {game.faq.length > 0 ? (

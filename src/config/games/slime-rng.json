@@ -1,16 +1,51 @@
 {
   "slug": "slime-rng",
   "name": "Slime RNG",
-  "description": "RNG slime-style Roblox games: quick code copy, hub guides, and trade or roll planning tools as we expand coverage.",
+  "description": "Hub for slime-style RNG Roblox games: verified codes when we have them, a trade total fairness check against any value sheet you use, and plain-language guides for rolls, dupes, and safe trading.",
   "codes": [],
   "faq": [
     {
       "question": "Why is the codes list empty?",
-      "answer": "Slime-style RNG games rotate codes quickly and sources vary by update. We publish active codes when verified; check back after major patches or follow official game channels for drops."
+      "answer": "Slime RNG titles push codes often and wording changes every patch. We only list codes we can verify from primary sources; after big updates, check the game’s official Discord or X account, then refresh this hub."
     },
     {
-      "question": "Where is the calculator?",
-      "answer": "Open Calculator from this game card on the home page or use Quick navigation on the hub. Mechanics differ by title — enter values from the same tier or value list you trust."
+      "question": "How should I use the calculator for slime RNG games?",
+      "answer": "Add up the values of everything you put in versus everything they put in using one trusted list (Discord sheet, Trello, or wiki tier). Paste those two totals here — the tool shows the gap; it does not roll RNG or price individual slimes for you."
+    },
+    {
+      "question": "Does this site know my in-game luck or pity?",
+      "answer": "No. RNG is handled entirely inside Roblox. We only help with arithmetic you choose to enter (trade totals) and with reading patch notes and code drops."
+    },
+    {
+      "question": "Is trading here safe?",
+      "answer": "Always use the in-game trade window, re-read every slot before accept, and ignore off-platform “verification” scams. This site is informational only and not affiliated with any developer or Roblox."
+    },
+    {
+      "question": "Which games does this hub cover?",
+      "answer": "We group mechanically similar “collect / roll / fuse / rebirth” slime experiences under one hub so guides and tools stay consistent. When a specific title needs its own codes list, we split it out — until then, treat values and codes as title-specific even if the UI feels familiar."
+    }
+  ],
+  "guideSections": [
+    {
+      "heading": "Codes & live drops",
+      "paragraphs": [
+        "Most slime RNG games hide redemption behind a Twitter icon, settings cog, or a dedicated “Codes” pedestal. After you paste a code, watch for case sensitivity and extra spaces — many codes are single-use per account.",
+        "If a code fails, assume it expired in the same hour the patch shipped. Screenshot the error, compare spelling with the official post, and never pay Robux to “unlock” codes from random videos."
+      ]
+    },
+    {
+      "heading": "Roll planning without superstition",
+      "paragraphs": [
+        "Track only what the UI actually tells you: pity meters, fuse costs, rebirth multipliers, and guaranteed rarity windows. Write those numbers in a notes app so you can compare before/after each update instead of guessing.",
+        "When developers rebalance droprates, old community spreadsheets lie until someone re-samples. Prefer patch-note math (documented percentages) over hearsay from chat."
+      ]
+    },
+    {
+      "heading": "Trading & dupes checklist",
+      "paragraphs": [
+        "Before you hit accept, confirm rarity tier, shiny / mutation tags, level, and any “locked” or “equipped” states that differ between games. If two items look identical, open details panels side by side.",
+        "Use the calculator only after both sides agree which value sheet defines the trade. Mixing units (e.g. “shiny = 3×” on one list but 2.5× on another) makes any gap meaningless."
+      ]
     }
   ]
 }

@@ -214,6 +214,20 @@
     "verdictTheyOver": "このスケールでは、相手が約 {amount} 多く出しています。ウィンドウに抜けがないか確認してください。",
     "disclaimer": "パッチで需要は変わります。数値は入力次第です。最終確認はゲーム内で。Blox Fruits / Roblox 非公式です。"
   },
+  "SlimeRngCalculator": {
+    "metaDescription": "Slime RNG 系のトレード補助：同じコミュニティ表の合計で渡す分と受け取る分を比較。",
+    "intro": "名称や倍率はアップデートで変わりやすいですが、考え方は同じです。同じリストから「渡す合計」と「受け取る合計」を入力してください。",
+    "labelYours": "あなたが渡す合計価値",
+    "labelTheirs": "あなたが受け取る合計価値",
+    "placeholderNumber": "例: 850",
+    "hint": "シャイニー / オーラ / 変異などの倍率は、先に表側で合算してから入力してください。",
+    "reset": "入力をクリア",
+    "gapLabel": "絶対差",
+    "verdictEqual": "このスケールでは一致しています。トレード画面でレア度タグの取り違えがないかも確認してください。",
+    "verdictYouOver": "このスケールでは、あなたが約 {amount} 多く出しています。意図的でなければ一度止めてください。",
+    "verdictTheyOver": "このスケールでは、相手が約 {amount} 多く出しています。追加条件やウィンドウ外の取引がないか確認してください。",
+    "disclaimer": "RNG 系は調整が速く、コミュニティ表も一致しません。入力値の比較のみで、各スライム RNG 開発元や Roblox とは無関係です。"
+  },
   "GameDetail": {
     "metaTitle": "{game}｜最新コードと交換計算ツール",
     "latestCodesHeading": "最新コード",
@@ -222,6 +236,8 @@
     "copied": "コピーしました",
     "quickNavHeading": "クイックナビ",
     "quickNavDescription": "このゲームの計算ツールページへ移動します。",
+    "guideHeading": "ハブガイド",
+    "jumpToFaq": "FAQ へ",
     "faqHeading": "よくある質問"
   },
   "MyKnifeFarm": {

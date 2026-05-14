@@ -214,6 +214,20 @@
     "verdictTheyOver": "按该尺度，对方大约多给了 {amount}——请确认交易窗口没有遗漏关键项。",
     "disclaimer": "版本补丁会改变果实热度；数字完全取决于你的输入。请以游戏内最终交易为准。与 Blox Fruits 或 Roblox 无关联。"
   },
+  "SlimeRngCalculator": {
+    "metaDescription": "Slime RNG 交易辅助：用同一张社区估值表对比你给出的总价与收到的总价。",
+    "intro": "Slime 类游戏常改货币名和倍率，但算法一样：一边是你给出的总价，一边是你收到的总价，且两侧须来自同一张表。",
+    "labelYours": "你给出的总价值",
+    "labelTheirs": "你收到的总价值",
+    "placeholderNumber": "例如 850",
+    "hint": "若榜单对闪光 / 光环 / 变异有倍率，请先在表内折算成总价再填入。",
+    "reset": "清空输入",
+    "gapLabel": "绝对差值",
+    "verdictEqual": "按该尺度两侧总价一致——仍请在交易窗口逐项核对词条与阶位是否一致。",
+    "verdictYouOver": "按该尺度，你大约多给了 {amount}——若非刻意多付，请先暂停确认。",
+    "verdictTheyOver": "按该尺度，对方大约多给了 {amount}——请确认没有附加条件或窗口外约定。",
+    "disclaimer": "RNG 类游戏数值调整频繁，不同榜单也会有差异。本工具仅反映你输入的数字，与任何 Slime RNG 开发者或 Roblox 无关联。"
+  },
   "GameDetail": {
     "metaTitle": "{game}：兑换码、交易计算器与攻略",
     "latestCodesHeading": "最新兑换码",
@@ -222,6 +236,8 @@
     "copied": "已复制",
     "quickNavHeading": "快速导航",
     "quickNavDescription": "前往本游戏的计算器页面。",
+    "guideHeading": "攻略与说明",
+    "jumpToFaq": "跳到常见问题",
     "faqHeading": "常见问题"
   },
   "MyKnifeFarm": {

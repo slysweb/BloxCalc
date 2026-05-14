@@ -214,6 +214,20 @@
     "verdictTheyOver": "They are offering roughly {amount} more on this scale — confirm nothing important is missing from the window.",
     "disclaimer": "Fruit demand shifts with patches. Numbers here are whatever you type; always confirm the final trade in-game. Not affiliated with Blox Fruits or Roblox."
   },
+  "SlimeRngCalculator": {
+    "metaDescription": "Slime RNG trade helper: compare the total value you send versus the total you receive using the same community sheet before you confirm.",
+    "intro": "Slime-style games rename currencies and multipliers often, but the math is the same: one total you give, one total you get, both from the same list.",
+    "labelYours": "Total value you are trading away",
+    "labelTheirs": "Total value you are receiving",
+    "placeholderNumber": "e.g. 850",
+    "hint": "If your sheet uses shiny / aura / mutation multipliers, bake those into the totals before you paste them here.",
+    "reset": "Clear inputs",
+    "gapLabel": "Absolute gap",
+    "verdictEqual": "Totals match on this scale — still verify every slot in the trade window for duped tags or mismatched tiers.",
+    "verdictYouOver": "You are offering about {amount} more on this scale — pause unless that overpay is deliberate.",
+    "verdictTheyOver": "They are offering about {amount} more on this scale — confirm no hidden requirements or off-window items.",
+    "disclaimer": "RNG titles rebalance hourly sometimes; community sheets disagree. This tool only echoes numbers you type and is not affiliated with any slime RNG developer or Roblox."
+  },
   "GameDetail": {
     "metaTitle": "{game} codes, calculator & hub guides",
     "latestCodesHeading": "Latest codes",
@@ -222,6 +236,8 @@
     "copied": "Copied",
     "quickNavHeading": "Quick navigation",
     "quickNavDescription": "Jump to the calculator for this game.",
+    "guideHeading": "Hub guide",
+    "jumpToFaq": "Jump to FAQ",
     "faqHeading": "FAQ"
   },
   "MyKnifeFarm": {

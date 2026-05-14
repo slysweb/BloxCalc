@@ -214,6 +214,20 @@
     "verdictTheyOver": "Nesta escala, eles estão oferecendo cerca de {amount} a mais — confirme se nada importante falta na janela.",
     "disclaimer": "A demanda muda a cada patch. Os números são os que você digita; confirme a troca final no jogo. Não afiliado a Blox Fruits ou Roblox."
   },
+  "SlimeRngCalculator": {
+    "metaDescription": "Ajuda de troca para Slime RNG: compare o total que você envia com o que recebe na mesma planilha da comunidade.",
+    "intro": "Esses jogos renomeiam moedas e multiplicadores, mas a lógica é a mesma: um total que você dá, outro que recebe, ambos da mesma lista.",
+    "labelYours": "Valor total que você está entregando",
+    "labelTheirs": "Valor total que você está recebendo",
+    "placeholderNumber": "ex.: 850",
+    "hint": "Se a sua tabela usa multiplicadores de shiny/aura/mutação, some isso nos totais antes de colar aqui.",
+    "reset": "Limpar campos",
+    "gapLabel": "Diferença absoluta",
+    "verdictEqual": "Os totais batem nesta escala — confira cada slot na janela de troca para tags ou tiers trocados.",
+    "verdictYouOver": "Nesta escala, você está oferecendo cerca de {amount} a mais — pause salvo overpay intencional.",
+    "verdictTheyOver": "Nesta escala, eles estão oferecendo cerca de {amount} a mais — confirme se não há requisitos ocultos.",
+    "disclaimer": "Títulos RNG mudam rápido e planilhas discordam. A ferramenta só repete o que você digita; não é afiliada a desenvolvedores de slime RNG ou Roblox."
+  },
   "GameDetail": {
     "metaTitle": "{game}: códigos, calculadora e guia rápido",
     "latestCodesHeading": "Códigos mais recentes",
@@ -222,6 +236,8 @@
     "copied": "Copiado",
     "quickNavHeading": "Navegação rápida",
     "quickNavDescription": "Abra a calculadora deste jogo.",
+    "guideHeading": "Guia do hub",
+    "jumpToFaq": "Ir para o FAQ",
     "faqHeading": "Perguntas frequentes"
   },
   "MyKnifeFarm": {
